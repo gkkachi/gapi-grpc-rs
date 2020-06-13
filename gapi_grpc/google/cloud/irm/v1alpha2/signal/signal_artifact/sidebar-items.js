@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["ArtifactType","The type of resource linked to"]]});

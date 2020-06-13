@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["SecurityCenterProperties","Cloud SCC managed properties. These properties are managed by Cloud SCC and cannot be modified by the user."]]});

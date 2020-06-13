@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["disk",""]],"struct":[["Disk","A Google Compute Engine disk resource specification."]]});

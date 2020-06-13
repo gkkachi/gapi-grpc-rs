@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["detected_break",""]],"struct":[["DetectedBreak","Detected break at the end of a [Token][google.cloud.documentai.v1beta2.Document.Page.Token]."]]});

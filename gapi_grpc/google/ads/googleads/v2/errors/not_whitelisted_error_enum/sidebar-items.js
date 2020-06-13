@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["NotWhitelistedError","Enum describing possible not whitelisted errors."]]});

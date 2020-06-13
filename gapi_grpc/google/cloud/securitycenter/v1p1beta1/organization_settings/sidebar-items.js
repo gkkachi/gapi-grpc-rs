@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["asset_discovery_config",""]],"struct":[["AssetDiscoveryConfig","The configuration used for Asset Discovery runs."]]});

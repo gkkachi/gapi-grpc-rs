@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["iteration_result",""]],"struct":[["IterationResult","Information about a single iteration of the training run."],["TrainingOptions",""]]});

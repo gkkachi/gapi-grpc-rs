@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Result","A single search result, i.e. an incident with (potentially) additional information."]]});

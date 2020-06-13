@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["EscalationLevel","Specifies the escalation level of this incident, within the IRM protocol for handling incidents."],["Severity","Severity of an incident."],["Stage","Stage of an incident."]],"mod":[["communication_venue",""]],"struct":[["CommunicationVenue","CommunicationVenue is a record of where conversations about an incident are happening."]]});

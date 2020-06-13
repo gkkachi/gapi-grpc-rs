@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["consumer_info",""]],"struct":[["CheckInfo","Contains additional information about the check operation."],["ConsumerInfo","`ConsumerInfo` provides information about the consumer."]]});

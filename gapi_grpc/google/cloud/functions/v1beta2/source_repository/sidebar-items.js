@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Version","The version of a function. Defaults to the latest version of the master branch."]]});

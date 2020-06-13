@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Incident","Describes an incident for inclusion in the handoff. This is wrapped in a message to provide flexibility for potentially attaching additional data to each incident in the future."]]});

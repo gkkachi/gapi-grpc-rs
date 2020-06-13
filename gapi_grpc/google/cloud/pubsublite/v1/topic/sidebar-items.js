@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["PartitionConfig","The settings for a topic's partitions."],["RetentionConfig","The settings for a topic's message retention."]]});

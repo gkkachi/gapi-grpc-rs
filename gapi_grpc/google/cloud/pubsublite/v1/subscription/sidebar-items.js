@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["delivery_config",""]],"struct":[["DeliveryConfig","The settings for a subscription's message delivery."]]});

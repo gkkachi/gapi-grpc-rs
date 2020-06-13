@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["list_findings_result",""]],"struct":[["ListFindingsResult","Result containing the Finding and its StateChange."]]});

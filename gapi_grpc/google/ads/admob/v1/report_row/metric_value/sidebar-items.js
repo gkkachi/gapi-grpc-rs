@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Value","Metric value in the format specified in the report's spec Metric enum name."]]});

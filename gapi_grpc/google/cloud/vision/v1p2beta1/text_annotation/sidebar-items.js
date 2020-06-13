@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["detected_break",""]],"struct":[["DetectedBreak","Detected start or end of a structural component."],["DetectedLanguage","Detected language for a structural component."],["TextProperty","Additional information detected on the structural component."]]});

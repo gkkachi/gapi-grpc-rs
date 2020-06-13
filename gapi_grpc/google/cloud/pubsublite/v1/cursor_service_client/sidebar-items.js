@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CursorServiceClient","The service that a subscriber client application uses to manage committed cursors while receiving messsages. A cursor represents a subscriber's progress within a topic partition for a given subscription."]]});

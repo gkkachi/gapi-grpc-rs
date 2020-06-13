@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["NodeMetadata","NodeMetadata is the configuration for if and how to expose the node metadata to the workload running on the node."]]});

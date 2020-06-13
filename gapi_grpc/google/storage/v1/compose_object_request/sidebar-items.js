@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["source_objects",""]],"struct":[["SourceObjects","Description of a source object for a composition request."]]});

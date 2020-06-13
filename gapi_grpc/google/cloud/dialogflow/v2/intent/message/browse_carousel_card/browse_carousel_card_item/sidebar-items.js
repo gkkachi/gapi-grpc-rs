@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["open_url_action",""]],"struct":[["OpenUrlAction","Actions on Google action to open a given url."]]});

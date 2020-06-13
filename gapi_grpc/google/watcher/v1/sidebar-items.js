@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["change",""],["watcher_client","Generated client implementations."]],"struct":[["Change","A Change indicates the most recent state of an element."],["ChangeBatch","A batch of Change messages."],["Request","The message used by the client to register interest in an entity."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["index_config_delta",""]],"struct":[["IndexConfigDelta","Information about an index configuration change."]]});

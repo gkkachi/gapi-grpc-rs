@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["modification",""]],"struct":[["Modification","A create, update, or delete of a particular column family."]]});

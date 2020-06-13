@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["KnowledgeBasesClient","Manages knowledge bases."]]});

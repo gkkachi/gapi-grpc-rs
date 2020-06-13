@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["AuditLog","Common audit log format for Google Cloud Platform API operations."],["AuthenticationInfo","Authentication information for the operation."],["AuthorizationInfo","Authorization information for the operation."],["RequestMetadata","Metadata about the request."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Value","A `TimeEvent` can contain either an `Annotation` object or a `MessageEvent` object, but not both."]],"mod":[["message_event",""]],"struct":[["Annotation","Text annotation with a set of attributes."],["MessageEvent","An event describing a message sent/received between Spans."]]});

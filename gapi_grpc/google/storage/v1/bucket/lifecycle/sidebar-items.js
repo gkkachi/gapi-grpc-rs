@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["rule",""]],"struct":[["Rule","A lifecycle Rule, combining an action to take on an object and a condition which will trigger that action."]]});

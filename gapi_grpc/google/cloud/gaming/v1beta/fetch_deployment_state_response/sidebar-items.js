@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DeployedClusterState","The Game Server Cluster changes made by the Game Server Deployment."]]});

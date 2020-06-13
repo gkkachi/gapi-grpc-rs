@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["IamClient","Creates and manages service account objects."]]});

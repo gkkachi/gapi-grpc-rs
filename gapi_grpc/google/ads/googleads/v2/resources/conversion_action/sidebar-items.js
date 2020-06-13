@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["AttributionModelSettings","Settings related to this conversion action's attribution model."],["ValueSettings","Settings related to the value for conversion events associated with this conversion action."]]});

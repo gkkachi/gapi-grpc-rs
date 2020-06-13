@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["cluster",""]],"struct":[["Cluster","Message containing the information about one cluster."]]});

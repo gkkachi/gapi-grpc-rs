@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["PageOnePromotedStrategyGoal","Enum describing possible strategy goals."]]});
