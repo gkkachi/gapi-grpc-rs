@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["GameServerDeploymentsServiceClient","The Game Server Deployment is used to control the deployment of Agones fleets."]]});
+initSidebarItems({"struct":[["GameServerDeploymentsServiceClient","The game server deployment is used to control the deployment of Agones fleets."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["GameServerConfigsServiceClient","The Game Server Config configures the game servers in an Agones fleet."]]});
+initSidebarItems({"struct":[["GameServerConfigsServiceClient","The game server config configures the game servers in an Agones fleet."]]});

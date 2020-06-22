@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["RealmsServiceClient","A Realm is a grouping of Game Server Clusters that are considered interchangeable."]]});
+initSidebarItems({"struct":[["RealmsServiceClient","A realm is a grouping of game server clusters that are considered interchangeable."]]});

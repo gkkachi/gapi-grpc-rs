@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Granularity","Reporting granularity for the cohorts."]]});
