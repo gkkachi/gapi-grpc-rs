@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["State","Represents Recommendation State"]]});
+initSidebarItems({"enum":[["State","Represents Recommendation State."]]});
