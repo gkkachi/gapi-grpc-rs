@@ -5,13 +5,13 @@ in order to determine whether that span should be enabled or disabled.</p>
 in being notified about a callsite.</p>
 <p>If all active subscribers are <code>never()</code> interested in a callsite, it will
 be completely disabled unless a new subscriber becomes active.</p>
-</div><h4 id='method.sometimes' class="method"><code id='sometimes.v'>pub fn <a href='#method.sometimes' class='fnname'>sometimes</a>() -&gt; <a class="struct" href="../../tracing/subscriber/struct.Interest.html" title="struct tracing::subscriber::Interest">Interest</a></code><a class='srclink' href='../../src/tracing_core/subscriber.rs.html#486-488' title='goto source code'>[src]</a></h4><div class='docblock'><p>Returns an <code>Interest</code> indicating  the subscriber is sometimes interested
+</div><h4 id='method.sometimes' class="method"><code id='sometimes.v'>pub fn <a href='#method.sometimes' class='fnname'>sometimes</a>() -&gt; <a class="struct" href="../../tracing/subscriber/struct.Interest.html" title="struct tracing::subscriber::Interest">Interest</a></code><a class='srclink' href='../../src/tracing_core/subscriber.rs.html#486-488' title='goto source code'>[src]</a></h4><div class='docblock'><p>Returns an <code>Interest</code> indicating the subscriber is sometimes interested
 in being notified about a callsite.</p>
 <p>If all active subscribers are <code>sometimes</code> or <code>never</code> interested in a
 callsite, the currently active subscriber will be asked to filter that
 callsite every time it creates a span. This will be the case until a new
 subscriber expresses that it is <code>always</code> interested in the callsite.</p>
-</div><h4 id='method.always' class="method"><code id='always.v'>pub fn <a href='#method.always' class='fnname'>always</a>() -&gt; <a class="struct" href="../../tracing/subscriber/struct.Interest.html" title="struct tracing::subscriber::Interest">Interest</a></code><a class='srclink' href='../../src/tracing_core/subscriber.rs.html#496-498' title='goto source code'>[src]</a></h4><div class='docblock'><p>Returns an <code>Interest</code> indicating  the subscriber is always interested in
+</div><h4 id='method.always' class="method"><code id='always.v'>pub fn <a href='#method.always' class='fnname'>always</a>() -&gt; <a class="struct" href="../../tracing/subscriber/struct.Interest.html" title="struct tracing::subscriber::Interest">Interest</a></code><a class='srclink' href='../../src/tracing_core/subscriber.rs.html#496-498' title='goto source code'>[src]</a></h4><div class='docblock'><p>Returns an <code>Interest</code> indicating the subscriber is always interested in
 being notified about a callsite.</p>
 <p>If any subscriber expresses that it is <code>always()</code> interested in a given
 callsite, then the callsite will always be enabled.</p>

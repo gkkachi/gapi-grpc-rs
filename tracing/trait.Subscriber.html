@@ -249,12 +249,12 @@ returned by this subscriber's <code>new_span</code> function.</p>
 <p>It's guaranteed that if this function has been called once more than the
 number of times <code>clone_span</code> was called with the same <code>id</code>, then no more
 handles that can enter the span with that <code>id</code> exist. This means that it
-can be used in  conjunction with <a href="trait.Subscriber.html#method.clone_span"><code>clone_span</code></a> to track the number of
+can be used in conjunction with <a href="trait.Subscriber.html#method.clone_span"><code>clone_span</code></a> to track the number of
 handles capable of <code>enter</code>ing a span. When all the handles have been
 dropped (i.e., <code>try_close</code> has been called one more time than
 <code>clone_span</code> for a given ID), the subscriber may assume that the span
 will not be entered again, and should return <code>true</code>. It is then free to
-deallocate storage for data associated with  that span, write data from
+deallocate storage for data associated with that span, write data from
 that span to IO, and so on.</p>
 <p><strong>Note</strong>: since this function is called when spans are dropped,
 implementations should ensure that they are unwind-safe. Panicking from
