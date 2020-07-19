@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["AgentsClient","Agents are best described as Natural Language Understanding (NLU) modules that transform user requests into actionable data. You can include agents in your app, product, or service to determine user intent and respond to the user in a natural way."]]});
+initSidebarItems({"struct":[["AgentsClient","Service for managing [Agents][google.cloud.dialogflow.v2beta1.Agent]."]]});

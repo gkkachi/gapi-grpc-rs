@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["KeyId","A KeyId identifies a specific public key, usually by hashing the public key."],["SubjectDescription","These values describe fields in an issued X.509 certificate such as the distinguished name, subject alternative names, serial number, and lifetime."]]});

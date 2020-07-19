@@ -16,6 +16,7 @@ ALIASES["futures_util"] = {};
 ALIASES["gapi_grpc"] = {};
 ALIASES["getrandom"] = {};
 ALIASES["h2"] = {};
+ALIASES["hashbrown"] = {};
 ALIASES["http"] = {};
 ALIASES["http_body"] = {};
 ALIASES["httparse"] = {};

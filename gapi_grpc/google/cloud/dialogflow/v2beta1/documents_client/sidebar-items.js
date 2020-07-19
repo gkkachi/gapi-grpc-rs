@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["DocumentsClient","Manages documents of a knowledge base."]]});
+initSidebarItems({"struct":[["DocumentsClient","Service for managing knowledge [Documents][google.cloud.dialogflow.v2beta1.Document]."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["ContextsClient","A context represents additional information included with user input or with an intent returned by the Dialogflow API. Contexts are helpful for differentiating user input which may be vague or have a different meaning depending on additional details from your application such as user setting and preferences, previous user input, where the user is in your application, geographic location, and so on."]]});
+initSidebarItems({"struct":[["ContextsClient","Service for managing [Contexts][google.cloud.dialogflow.v2beta1.Context]."]]});
