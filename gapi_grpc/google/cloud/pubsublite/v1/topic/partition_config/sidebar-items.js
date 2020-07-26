@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Dimension",""]],"struct":[["Capacity","The throughput capacity configuration for each partition."]]});

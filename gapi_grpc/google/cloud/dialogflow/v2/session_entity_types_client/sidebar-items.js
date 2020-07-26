@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["SessionEntityTypesClient","Entities are extracted from user input and represent parameters that are meaningful to your application. For example, a date range, a proper name such as a geographic location or landmark, and so on. Entities represent actionable data for your application."]]});
+initSidebarItems({"struct":[["SessionEntityTypesClient","Service for managing [SessionEntityTypes][google.cloud.dialogflow.v2.SessionEntityType]."]]});
