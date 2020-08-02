@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["target_fleet_details",""]],"struct":[["TargetFleetDetails","Details of the target Agones fleet."]]});

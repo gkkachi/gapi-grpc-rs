@@ -945,6 +945,21 @@
 <span id="945">945</span>
 <span id="946">946</span>
 <span id="947">947</span>
+<span id="948">948</span>
+<span id="949">949</span>
+<span id="950">950</span>
+<span id="951">951</span>
+<span id="952">952</span>
+<span id="953">953</span>
+<span id="954">954</span>
+<span id="955">955</span>
+<span id="956">956</span>
+<span id="957">957</span>
+<span id="958">958</span>
+<span id="959">959</span>
+<span id="960">960</span>
+<span id="961">961</span>
+<span id="962">962</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">google</span> {
@@ -1270,6 +1285,9 @@
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">gaming</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.gaming.v1&quot;</span>);
+            }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.gaming.v1beta&quot;</span>);
             }
@@ -1319,6 +1337,11 @@
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">memcache</span> {
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta2</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.memcache.v1beta2&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">metastore</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1alpha</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.metastore.v1alpha&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ml</span> {
@@ -1520,6 +1543,13 @@
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v3beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.translation.v3beta1&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">video</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">transcoder</span> {
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.video.transcoder.v1beta1&quot;</span>);
+                }
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">videointelligence</span> {

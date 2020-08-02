@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["text_atom",""]],"struct":[["TextAtom","The mapping for the `Job.edit_list` atoms with text `EditAtom.inputs`."]]});
