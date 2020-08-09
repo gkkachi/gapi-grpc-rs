@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["training_phrase",""]],"struct":[["Parameter","Represents an intent parameter."],["TrainingPhrase","Represents an example that the agent is trained on to identify the intent."]]});
