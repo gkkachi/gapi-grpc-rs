@@ -965,6 +965,11 @@
 <span id="965">965</span>
 <span id="966">966</span>
 <span id="967">967</span>
+<span id="968">968</span>
+<span id="969">969</span>
+<span id="970">970</span>
+<span id="971">971</span>
+<span id="972">972</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">google</span> {
@@ -1708,6 +1713,11 @@
         }
     }
     <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">example</span> {
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">endpointsapis</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.example.endpointsapis.v1&quot;</span>);
+            }
+        }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">library</span> {
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.example.library.v1&quot;</span>);

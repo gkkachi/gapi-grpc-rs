@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source to the Rust file `/home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-attributes-0.1.9/src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs.html -- source</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css"><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script src="../../storage.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="shortcut icon" href="../../favicon.ico"><style type="text/css">#crate-search{background-image:url("../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../tracing_attributes/index.html'><div class='logo-container'><img src='../../rust-logo.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><pre class="line-numbers"><span id="1">  1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source to the Rust file `/home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-attributes-0.1.10/src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs.html -- source</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css"><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script src="../../storage.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="shortcut icon" href="../../favicon.ico"><style type="text/css">#crate-search{background-image:url("../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../tracing_attributes/index.html'><div class='logo-container'><img src='https://raw.githubusercontent.com/tokio-rs/tracing/master/assets/logo.svg' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><pre class="line-numbers"><span id="1">  1</span>
 <span id="2">  2</span>
 <span id="3">  3</span>
 <span id="4">  4</span>
@@ -868,6 +868,114 @@
 <span id="868">868</span>
 <span id="869">869</span>
 <span id="870">870</span>
+<span id="871">871</span>
+<span id="872">872</span>
+<span id="873">873</span>
+<span id="874">874</span>
+<span id="875">875</span>
+<span id="876">876</span>
+<span id="877">877</span>
+<span id="878">878</span>
+<span id="879">879</span>
+<span id="880">880</span>
+<span id="881">881</span>
+<span id="882">882</span>
+<span id="883">883</span>
+<span id="884">884</span>
+<span id="885">885</span>
+<span id="886">886</span>
+<span id="887">887</span>
+<span id="888">888</span>
+<span id="889">889</span>
+<span id="890">890</span>
+<span id="891">891</span>
+<span id="892">892</span>
+<span id="893">893</span>
+<span id="894">894</span>
+<span id="895">895</span>
+<span id="896">896</span>
+<span id="897">897</span>
+<span id="898">898</span>
+<span id="899">899</span>
+<span id="900">900</span>
+<span id="901">901</span>
+<span id="902">902</span>
+<span id="903">903</span>
+<span id="904">904</span>
+<span id="905">905</span>
+<span id="906">906</span>
+<span id="907">907</span>
+<span id="908">908</span>
+<span id="909">909</span>
+<span id="910">910</span>
+<span id="911">911</span>
+<span id="912">912</span>
+<span id="913">913</span>
+<span id="914">914</span>
+<span id="915">915</span>
+<span id="916">916</span>
+<span id="917">917</span>
+<span id="918">918</span>
+<span id="919">919</span>
+<span id="920">920</span>
+<span id="921">921</span>
+<span id="922">922</span>
+<span id="923">923</span>
+<span id="924">924</span>
+<span id="925">925</span>
+<span id="926">926</span>
+<span id="927">927</span>
+<span id="928">928</span>
+<span id="929">929</span>
+<span id="930">930</span>
+<span id="931">931</span>
+<span id="932">932</span>
+<span id="933">933</span>
+<span id="934">934</span>
+<span id="935">935</span>
+<span id="936">936</span>
+<span id="937">937</span>
+<span id="938">938</span>
+<span id="939">939</span>
+<span id="940">940</span>
+<span id="941">941</span>
+<span id="942">942</span>
+<span id="943">943</span>
+<span id="944">944</span>
+<span id="945">945</span>
+<span id="946">946</span>
+<span id="947">947</span>
+<span id="948">948</span>
+<span id="949">949</span>
+<span id="950">950</span>
+<span id="951">951</span>
+<span id="952">952</span>
+<span id="953">953</span>
+<span id="954">954</span>
+<span id="955">955</span>
+<span id="956">956</span>
+<span id="957">957</span>
+<span id="958">958</span>
+<span id="959">959</span>
+<span id="960">960</span>
+<span id="961">961</span>
+<span id="962">962</span>
+<span id="963">963</span>
+<span id="964">964</span>
+<span id="965">965</span>
+<span id="966">966</span>
+<span id="967">967</span>
+<span id="968">968</span>
+<span id="969">969</span>
+<span id="970">970</span>
+<span id="971">971</span>
+<span id="972">972</span>
+<span id="973">973</span>
+<span id="974">974</span>
+<span id="975">975</span>
+<span id="976">976</span>
+<span id="977">977</span>
+<span id="978">978</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="doccomment">//! A procedural macro attribute for instrumenting functions with [`tracing`].</span>
 <span class="doccomment">//!</span>
@@ -883,7 +991,7 @@
 <span class="doccomment">//!</span>
 <span class="doccomment">//! ```toml</span>
 <span class="doccomment">//! [dependencies]</span>
-<span class="doccomment">//! tracing-attributes = &quot;0.1.9&quot;</span>
+<span class="doccomment">//! tracing-attributes = &quot;0.1.10&quot;</span>
 <span class="doccomment">//! ```</span>
 <span class="doccomment">//!</span>
 <span class="doccomment">//! *Compiler support: requires rustc 1.39+*</span>
@@ -906,7 +1014,11 @@
 <span class="doccomment">//! [`tracing`]: https://crates.io/crates/tracing</span>
 <span class="doccomment">//! [span]: https://docs.rs/tracing/latest/tracing/span/index.html</span>
 <span class="doccomment">//! [instrument]: attr.instrument.html</span>
-<span class="attribute">#![<span class="ident">doc</span>(<span class="ident">html_root_url</span> <span class="op">=</span> <span class="string">&quot;https://docs.rs/tracing-attributes/0.1.9&quot;</span>)]</span>
+<span class="attribute">#![<span class="ident">doc</span>(<span class="ident">html_root_url</span> <span class="op">=</span> <span class="string">&quot;https://docs.rs/tracing-attributes/0.1.10&quot;</span>)]</span>
+<span class="attribute">#![<span class="ident">doc</span>(
+    <span class="ident">html_logo_url</span> <span class="op">=</span> <span class="string">&quot;https://raw.githubusercontent.com/tokio-rs/tracing/master/assets/logo.svg&quot;</span>,
+    <span class="ident">issue_tracker_base_url</span> <span class="op">=</span> <span class="string">&quot;https://github.com/tokio-rs/tracing/issues/&quot;</span>
+)]</span>
 <span class="attribute">#![<span class="ident">warn</span>(
     <span class="ident">missing_debug_implementations</span>,
     <span class="ident">missing_docs</span>,
@@ -988,6 +1100,14 @@
 <span class="doccomment">///     // ...</span>
 <span class="doccomment">/// }</span>
 <span class="doccomment">/// ```</span>
+<span class="doccomment">/// Overriding the generated span&#39;s name:</span>
+<span class="doccomment">/// ```</span>
+<span class="doccomment">/// # use tracing_attributes::instrument;</span>
+<span class="doccomment">/// #[instrument(name = &quot;my_name&quot;)]</span>
+<span class="doccomment">/// pub fn my_function() {</span>
+<span class="doccomment">///     // ...</span>
+<span class="doccomment">/// }</span>
+<span class="doccomment">/// ```</span>
 <span class="doccomment">/// Overriding the generated span&#39;s target:</span>
 <span class="doccomment">/// ```</span>
 <span class="doccomment">/// # use tracing_attributes::instrument;</span>
@@ -1043,8 +1163,8 @@
 <span class="doccomment">/// ```</span>
 <span class="doccomment">///</span>
 <span class="doccomment">/// It also works with [async-trait](https://crates.io/crates/async-trait)</span>
-<span class="doccomment">/// (a crate that allows async functions on traits,</span>
-<span class="doccomment">/// something not currently possible with rustc alone),</span>
+<span class="doccomment">/// (a crate that allows defining async functions in traits,</span>
+<span class="doccomment">/// something not currently possible in Rust),</span>
 <span class="doccomment">/// and hopefully most libraries that exhibit similar behaviors:</span>
 <span class="doccomment">///</span>
 <span class="doccomment">/// ```</span>
@@ -1053,18 +1173,43 @@
 <span class="doccomment">///</span>
 <span class="doccomment">/// #[async_trait]</span>
 <span class="doccomment">/// pub trait Foo {</span>
-<span class="doccomment">///     async fn foo(&amp;self, v: usize) -&gt; ();</span>
+<span class="doccomment">///     async fn foo(&amp;self, arg: usize);</span>
 <span class="doccomment">/// }</span>
 <span class="doccomment">///</span>
 <span class="doccomment">/// #[derive(Debug)]</span>
-<span class="doccomment">/// struct FooImpl;</span>
+<span class="doccomment">/// struct FooImpl(usize);</span>
 <span class="doccomment">///</span>
 <span class="doccomment">/// #[async_trait]</span>
 <span class="doccomment">/// impl Foo for FooImpl {</span>
-<span class="doccomment">///     #[instrument(skip(self))]</span>
-<span class="doccomment">///     async fn foo(&amp;self, v: usize) {}</span>
+<span class="doccomment">///     #[instrument(fields(value = self.0, tmp = std::any::type_name::&lt;Self&gt;()))]</span>
+<span class="doccomment">///     async fn foo(&amp;self, arg: usize) {}</span>
 <span class="doccomment">/// }</span>
 <span class="doccomment">/// ```</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// An interesting note on this subject is that references to the `Self`</span>
+<span class="doccomment">/// type inside the `fields` argument are only allowed when the instrumented</span>
+<span class="doccomment">/// function is a method aka. the function receives `self` as an argument.</span>
+<span class="doccomment">/// For example, this *will not work* because it doesn&#39;t receive `self`:</span>
+<span class="doccomment">/// ```compile_fail</span>
+<span class="doccomment">/// # use tracing::instrument;</span>
+<span class="doccomment">/// use async_trait::async_trait;</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// #[async_trait]</span>
+<span class="doccomment">/// pub trait Bar {</span>
+<span class="doccomment">///     async fn bar();</span>
+<span class="doccomment">/// }</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// #[derive(Debug)]</span>
+<span class="doccomment">/// struct BarImpl(usize);</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// #[async_trait]</span>
+<span class="doccomment">/// impl Bar for BarImpl {</span>
+<span class="doccomment">///     #[instrument(fields(tmp = std::any::type_name::&lt;Self&gt;()))]</span>
+<span class="doccomment">///     async fn bar() {}</span>
+<span class="doccomment">/// }</span>
+<span class="doccomment">/// ```</span>
+<span class="doccomment">/// Instead, you should manually rewrite any `Self` types as the type for</span>
+<span class="doccomment">/// which you implement the trait: `#[instrument(fields(tmp = std::any::type_name::&lt;Bar&gt;()))]`.</span>
 
 <span class="doccomment">///</span>
 <span class="doccomment">/// [span]: https://docs.rs/tracing/latest/tracing/span/index.html</span>
@@ -1078,20 +1223,25 @@
     <span class="kw">let</span> <span class="ident">input</span>: <span class="ident">ItemFn</span> <span class="op">=</span> <span class="ident">syn</span>::<span class="macro">parse_macro_input</span><span class="macro">!</span>(<span class="ident">item</span> <span class="kw">as</span> <span class="ident">ItemFn</span>);
     <span class="kw">let</span> <span class="ident">args</span> <span class="op">=</span> <span class="ident">syn</span>::<span class="macro">parse_macro_input</span><span class="macro">!</span>(<span class="ident">args</span> <span class="kw">as</span> <span class="ident">InstrumentArgs</span>);
 
+    <span class="kw">let</span> <span class="ident">instrumented_function_name</span> <span class="op">=</span> <span class="ident">input</span>.<span class="ident">sig</span>.<span class="ident">ident</span>.<span class="ident">to_string</span>();
+
     <span class="comment">// check for async_trait-like patterns in the block and wrap the</span>
     <span class="comment">// internal function with Instrument instead of wrapping the</span>
     <span class="comment">// async_trait generated wrapper</span>
-    <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">Some</span>(<span class="ident">internal_fun_name</span>) <span class="op">=</span>
-        <span class="ident">get_async_trait_name</span>(<span class="kw-2">&amp;</span><span class="ident">input</span>.<span class="ident">block</span>, <span class="ident">input</span>.<span class="ident">sig</span>.<span class="ident">asyncness</span>.<span class="ident">is_some</span>())
-    {
+    <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">Some</span>(<span class="ident">internal_fun</span>) <span class="op">=</span> <span class="ident">get_async_trait_info</span>(<span class="kw-2">&amp;</span><span class="ident">input</span>.<span class="ident">block</span>, <span class="ident">input</span>.<span class="ident">sig</span>.<span class="ident">asyncness</span>.<span class="ident">is_some</span>()) {
         <span class="comment">// let&#39;s rewrite some statements!</span>
         <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">stmts</span>: <span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Stmt</span><span class="op">&gt;</span> <span class="op">=</span> <span class="ident">input</span>.<span class="ident">block</span>.<span class="ident">stmts</span>.<span class="ident">to_vec</span>();
         <span class="kw">for</span> <span class="ident">stmt</span> <span class="kw">in</span> <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">stmts</span> {
             <span class="kw">if</span> <span class="kw">let</span> <span class="ident">Stmt</span>::<span class="ident">Item</span>(<span class="ident">Item</span>::<span class="ident">Fn</span>(<span class="ident">fun</span>)) <span class="op">=</span> <span class="ident">stmt</span> {
                 <span class="comment">// instrument the function if we considered it as the one we truly want to trace</span>
-                <span class="kw">if</span> <span class="ident">fun</span>.<span class="ident">sig</span>.<span class="ident">ident</span> <span class="op">=</span><span class="op">=</span> <span class="ident">internal_fun_name</span> {
-                    <span class="kw-2">*</span><span class="ident">stmt</span> <span class="op">=</span> <span class="ident">syn</span>::<span class="ident">parse2</span>(<span class="ident">gen_body</span>(<span class="ident">fun</span>, <span class="ident">args</span>, <span class="prelude-val">Some</span>(<span class="ident">input</span>.<span class="ident">sig</span>.<span class="ident">ident</span>.<span class="ident">to_string</span>())))
-                        .<span class="ident">unwrap</span>();
+                <span class="kw">if</span> <span class="ident">fun</span>.<span class="ident">sig</span>.<span class="ident">ident</span> <span class="op">=</span><span class="op">=</span> <span class="ident">internal_fun</span>.<span class="ident">name</span> {
+                    <span class="kw-2">*</span><span class="ident">stmt</span> <span class="op">=</span> <span class="ident">syn</span>::<span class="ident">parse2</span>(<span class="ident">gen_body</span>(
+                        <span class="ident">fun</span>,
+                        <span class="ident">args</span>,
+                        <span class="ident">instrumented_function_name</span>,
+                        <span class="prelude-val">Some</span>(<span class="ident">internal_fun</span>),
+                    ))
+                    .<span class="ident">unwrap</span>();
                     <span class="kw">break</span>;
                 }
             }
@@ -1107,14 +1257,15 @@
         )
         .<span class="ident">into</span>()
     } <span class="kw">else</span> {
-        <span class="ident">gen_body</span>(<span class="kw-2">&amp;</span><span class="ident">input</span>, <span class="ident">args</span>, <span class="prelude-val">None</span>).<span class="ident">into</span>()
+        <span class="ident">gen_body</span>(<span class="kw-2">&amp;</span><span class="ident">input</span>, <span class="ident">args</span>, <span class="ident">instrumented_function_name</span>, <span class="prelude-val">None</span>).<span class="ident">into</span>()
     }
 }
 
 <span class="kw">fn</span> <span class="ident">gen_body</span>(
     <span class="ident">input</span>: <span class="kw-2">&amp;</span><span class="ident">ItemFn</span>,
-    <span class="ident">args</span>: <span class="ident">InstrumentArgs</span>,
-    <span class="ident">fun_name</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span>,
+    <span class="kw-2">mut</span> <span class="ident">args</span>: <span class="ident">InstrumentArgs</span>,
+    <span class="ident">instrumented_function_name</span>: <span class="ident">String</span>,
+    <span class="ident">async_trait_fun</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">AsyncTraitInfo</span><span class="op">&gt;</span>,
 ) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">proc_macro2</span>::<span class="ident">TokenStream</span> {
     <span class="comment">// these are needed ahead of time, as ItemFn contains the function body _and_</span>
     <span class="comment">// isn&#39;t representable inside a quote!/quote_spanned! macro</span>
@@ -1153,14 +1304,7 @@
         .<span class="ident">name</span>
         .<span class="ident">as_ref</span>()
         .<span class="ident">map</span>(<span class="op">|</span><span class="ident">name</span><span class="op">|</span> <span class="macro">quote</span><span class="macro">!</span>(#<span class="ident">name</span>))
-        <span class="comment">// are we overriding the name because the span is inside a function</span>
-        <span class="comment">// generated by `async-trait`?</span>
-        .<span class="ident">or_else</span>(<span class="op">|</span><span class="op">|</span> <span class="ident">fun_name</span>.<span class="ident">as_ref</span>().<span class="ident">map</span>(<span class="op">|</span><span class="ident">name</span><span class="op">|</span> <span class="macro">quote</span><span class="macro">!</span>(#<span class="ident">name</span>)))
-        <span class="comment">// if neither override is present, use the parsed function&#39;s name.</span>
-        .<span class="ident">unwrap_or_else</span>(<span class="op">|</span><span class="op">|</span> {
-            <span class="kw">let</span> <span class="ident">name</span> <span class="op">=</span> <span class="ident">ident</span>.<span class="ident">to_string</span>();
-            <span class="macro">quote</span><span class="macro">!</span>(#<span class="ident">name</span>)
-        });
+        .<span class="ident">unwrap_or_else</span>(<span class="op">|</span><span class="op">|</span> <span class="macro">quote</span><span class="macro">!</span>(#<span class="ident">instrumented_function_name</span>));
 
     <span class="comment">// generate this inside a closure, so we can return early on errors.</span>
     <span class="kw">let</span> <span class="ident">span</span> <span class="op">=</span> (<span class="op">|</span><span class="op">|</span> {
@@ -1173,31 +1317,27 @@
                 <span class="ident">FnArg</span>::<span class="ident">Typed</span>(<span class="ident">PatType</span> { <span class="ident">pat</span>, .. }) <span class="op">=</span><span class="op">&gt;</span> <span class="ident">param_names</span>(<span class="kw-2">*</span><span class="ident">pat</span>),
                 <span class="ident">FnArg</span>::<span class="ident">Receiver</span>(<span class="kw">_</span>) <span class="op">=</span><span class="op">&gt;</span> <span class="ident">Box</span>::<span class="ident">new</span>(<span class="ident">iter</span>::<span class="ident">once</span>(<span class="ident">Ident</span>::<span class="ident">new</span>(<span class="string">&quot;self&quot;</span>, <span class="ident">param</span>.<span class="ident">span</span>()))),
             })
-            <span class="comment">// if we are inside a function generated by async-trait, we</span>
-            <span class="comment">// should take care to rewrite &quot;_self&quot; as &quot;self&quot; for</span>
-            <span class="comment">// &#39;user convenience&#39;</span>
+            <span class="comment">// Little dance with new (user-exposed) names and old (internal)</span>
+            <span class="comment">// names of identifiers. That way, you can do the following</span>
+            <span class="comment">// even though async_trait rewrite &quot;self&quot; as &quot;_self&quot;:</span>
+            <span class="comment">// ```</span>
+            <span class="comment">// #[async_trait]</span>
+            <span class="comment">// impl Foo for FooImpl {</span>
+            <span class="comment">//     #[instrument(skip(self))]</span>
+            <span class="comment">//     async fn foo(&amp;self, v: usize) {}</span>
+            <span class="comment">// }</span>
+            <span class="comment">// ```</span>
             .<span class="ident">map</span>(<span class="op">|</span><span class="ident">x</span><span class="op">|</span> {
-                <span class="kw">if</span> <span class="ident">fun_name</span>.<span class="ident">is_some</span>() <span class="kw-2">&amp;</span><span class="op">&amp;</span> <span class="ident">x</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;_self&quot;</span> {
+                <span class="comment">// if we are inside a function generated by async-trait, we</span>
+                <span class="comment">// should take care to rewrite &quot;_self&quot; as &quot;self&quot; for</span>
+                <span class="comment">// &#39;user convenience&#39;</span>
+                <span class="kw">if</span> <span class="ident">async_trait_fun</span>.<span class="ident">is_some</span>() <span class="kw-2">&amp;</span><span class="op">&amp;</span> <span class="ident">x</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;_self&quot;</span> {
                     (<span class="ident">Ident</span>::<span class="ident">new</span>(<span class="string">&quot;self&quot;</span>, <span class="ident">x</span>.<span class="ident">span</span>()), <span class="ident">x</span>)
                 } <span class="kw">else</span> {
                     (<span class="ident">x</span>.<span class="ident">clone</span>(), <span class="ident">x</span>)
                 }
             })
             .<span class="ident">collect</span>();
-
-        <span class="comment">// TODO: allow the user to rename fields at will (all the</span>
-        <span class="comment">// machinery should be here)</span>
-
-        <span class="comment">// Little dance with new (user-exposed) names and old (internal)</span>
-        <span class="comment">// names of identifiers. That way, you can do the following</span>
-        <span class="comment">// even though async_trait rewrite &quot;self&quot; as &quot;_self&quot;:</span>
-        <span class="comment">// ```</span>
-        <span class="comment">// #[async_trait]</span>
-        <span class="comment">// impl Foo for FooImpl {</span>
-        <span class="comment">//     #[instrument(skip(self))]</span>
-        <span class="comment">//     async fn foo(&amp;self, v: usize) {}</span>
-        <span class="comment">// }</span>
-        <span class="comment">// ```</span>
 
         <span class="kw">for</span> <span class="ident">skip</span> <span class="kw">in</span> <span class="kw-2">&amp;</span><span class="ident">args</span>.<span class="ident">skips</span> {
             <span class="kw">if</span> <span class="op">!</span><span class="ident">param_names</span>.<span class="ident">iter</span>().<span class="ident">map</span>(<span class="op">|</span>(<span class="ident">user</span>, <span class="kw">_</span>)<span class="op">|</span> <span class="ident">user</span>).<span class="ident">any</span>(<span class="op">|</span><span class="ident">y</span><span class="op">|</span> <span class="ident">y</span> <span class="op">=</span><span class="op">=</span> <span class="ident">skip</span>) {
@@ -1231,18 +1371,26 @@
             })
             .<span class="ident">map</span>(<span class="op">|</span>(<span class="ident">user_name</span>, <span class="ident">real_name</span>)<span class="op">|</span> <span class="macro">quote</span><span class="macro">!</span>(#<span class="ident">user_name</span> <span class="op">=</span> <span class="ident">tracing</span>::<span class="ident">field</span>::<span class="ident">debug</span>(<span class="kw-2">&amp;</span>#<span class="ident">real_name</span>)))
             .<span class="ident">collect</span>();
+
+        <span class="comment">// when async-trait is in use, replace instances of &quot;self&quot; with &quot;_self&quot; inside the fields values</span>
+        <span class="kw">if</span> <span class="kw">let</span> (<span class="prelude-val">Some</span>(<span class="kw-2">ref</span> <span class="ident">async_trait_fun</span>), <span class="prelude-val">Some</span>(<span class="ident">Fields</span>(<span class="kw-2">ref</span> <span class="kw-2">mut</span> <span class="ident">fields</span>))) <span class="op">=</span>
+            (<span class="ident">async_trait_fun</span>, <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">args</span>.<span class="ident">fields</span>)
+        {
+            <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">replacer</span> <span class="op">=</span> <span class="ident">SelfReplacer</span> {
+                <span class="ident">ty</span>: <span class="ident">async_trait_fun</span>.<span class="ident">self_type</span>.<span class="ident">clone</span>(),
+            };
+            <span class="kw">for</span> <span class="ident">e</span> <span class="kw">in</span> <span class="ident">fields</span>.<span class="ident">iter_mut</span>().<span class="ident">filter_map</span>(<span class="op">|</span><span class="ident">f</span><span class="op">|</span> <span class="ident">f</span>.<span class="ident">value</span>.<span class="ident">as_mut</span>()) {
+                <span class="ident">syn</span>::<span class="ident">visit_mut</span>::<span class="ident">visit_expr_mut</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">replacer</span>, <span class="ident">e</span>);
+            }
+        }
+
         <span class="kw">let</span> <span class="ident">custom_fields</span> <span class="op">=</span> <span class="kw-2">&amp;</span><span class="ident">args</span>.<span class="ident">fields</span>;
-        <span class="kw">let</span> <span class="ident">custom_fields</span> <span class="op">=</span> <span class="kw">if</span> <span class="ident">quoted_fields</span>.<span class="ident">is_empty</span>() {
-            <span class="macro">quote</span><span class="macro">!</span> { #<span class="ident">custom_fields</span> }
-        } <span class="kw">else</span> {
-            <span class="macro">quote</span><span class="macro">!</span> {, #<span class="ident">custom_fields</span> }
-        };
 
         <span class="macro">quote</span><span class="macro">!</span>(<span class="ident">tracing</span>::<span class="macro">span</span><span class="macro">!</span>(
             <span class="ident">target</span>: #<span class="ident">target</span>,
             #<span class="ident">level</span>,
             #<span class="ident">span_name</span>,
-            #(#<span class="ident">quoted_fields</span>),<span class="op">*</span>
+            #(#<span class="ident">quoted_fields</span>,)<span class="op">*</span>
             #<span class="ident">custom_fields</span>
 
         ))
@@ -1649,20 +1797,20 @@
     <span class="ident">syn</span>::<span class="macro">custom_keyword</span><span class="macro">!</span>(<span class="ident">err</span>);
 }
 
-<span class="comment">// Get the name of the inner function we need to hook, if the function</span>
-<span class="comment">// was generated by async-trait.</span>
-<span class="comment">// When we are given a function generated by async-trait, that function</span>
-<span class="comment">// is only a &quot;temporary&quot; one that returns a pinned future, and it is</span>
-<span class="comment">// that pinned future that needs to be instrumented, otherwise we will</span>
-<span class="comment">// only collect information on the moment the future was &quot;built&quot;,</span>
-<span class="comment">// and not its true span of execution.</span>
-<span class="comment">// So we inspect the block of the function to find if we can find the</span>
-<span class="comment">// pattern `async fn foo&lt;...&gt;(...) {...}; Box::pin(foo&lt;...&gt;(...))` and</span>
-<span class="comment">// return the name `foo` if that is the case. Our caller will then be</span>
-<span class="comment">// able to use that information to instrument the proper function.</span>
+<span class="comment">// Get the AST of the inner function we need to hook, if it was generated</span>
+<span class="comment">// by async-trait.</span>
+<span class="comment">// When we are given a function annotated by async-trait, that function</span>
+<span class="comment">// is only a placeholder that returns a pinned future containing the</span>
+<span class="comment">// user logic, and it is that pinned future that needs to be instrumented.</span>
+<span class="comment">// Were we to instrument its parent, we would only collect information</span>
+<span class="comment">// regarding the allocation of that future, and not its own span of execution.</span>
+<span class="comment">// So we inspect the block of the function to find if it matches the pattern</span>
+<span class="comment">// `async fn foo&lt;...&gt;(...) {...}; Box::pin(foo&lt;...&gt;(...))` and we return</span>
+<span class="comment">// the name `foo` if that is the case. &#39;gen_body&#39; will then be able</span>
+<span class="comment">// to use that information to instrument the proper function.</span>
 <span class="comment">// (this follows the approach suggested in</span>
 <span class="comment">// https://github.com/dtolnay/async-trait/issues/45#issuecomment-571245673)</span>
-<span class="kw">fn</span> <span class="ident">get_async_trait_name</span>(<span class="ident">block</span>: <span class="kw-2">&amp;</span><span class="ident">Block</span>, <span class="ident">block_is_async</span>: <span class="ident">bool</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span> {
+<span class="kw">fn</span> <span class="ident">get_async_trait_function</span>(<span class="ident">block</span>: <span class="kw-2">&amp;</span><span class="ident">Block</span>, <span class="ident">block_is_async</span>: <span class="ident">bool</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="ident">ItemFn</span><span class="op">&gt;</span> {
     <span class="comment">// are we in an async context? If yes, this isn&#39;t a async_trait-like pattern</span>
     <span class="kw">if</span> <span class="ident">block_is_async</span> {
         <span class="kw">return</span> <span class="prelude-val">None</span>;
@@ -1683,7 +1831,7 @@
             <span class="comment">// is the function declared as async? If so, this is a good</span>
             <span class="comment">// candidate, let&#39;s keep it in hand</span>
             <span class="kw">if</span> <span class="ident">fun</span>.<span class="ident">sig</span>.<span class="ident">asyncness</span>.<span class="ident">is_some</span>() {
-                <span class="ident">inside_funs</span>.<span class="ident">push</span>(<span class="ident">fun</span>.<span class="ident">sig</span>.<span class="ident">ident</span>.<span class="ident">to_string</span>());
+                <span class="ident">inside_funs</span>.<span class="ident">push</span>(<span class="ident">fun</span>);
             }
         } <span class="kw">else</span> <span class="kw">if</span> <span class="kw">let</span> <span class="ident">Stmt</span>::<span class="ident">Expr</span>(<span class="ident">e</span>) <span class="op">=</span> <span class="kw-2">&amp;</span><span class="ident">stmt</span> {
             <span class="ident">last_expr</span> <span class="op">=</span> <span class="prelude-val">Some</span>(<span class="ident">e</span>);
@@ -1713,9 +1861,11 @@
                         <span class="comment">// &quot;stringify&quot; the path of the function called</span>
                         <span class="kw">let</span> <span class="ident">func_name</span> <span class="op">=</span> <span class="ident">path_to_string</span>(<span class="kw-2">&amp;</span><span class="ident">inside_path</span>.<span class="ident">path</span>);
                         <span class="comment">// is this function directly defined insided the current block?</span>
-                        <span class="kw">if</span> <span class="ident">inside_funs</span>.<span class="ident">contains</span>(<span class="kw-2">&amp;</span><span class="ident">func_name</span>) {
-                            <span class="comment">// we must hook this function now</span>
-                            <span class="kw">return</span> <span class="prelude-val">Some</span>(<span class="ident">func_name</span>);
+                        <span class="kw">for</span> <span class="ident">fun</span> <span class="kw">in</span> <span class="ident">inside_funs</span> {
+                            <span class="kw">if</span> <span class="ident">fun</span>.<span class="ident">sig</span>.<span class="ident">ident</span> <span class="op">=</span><span class="op">=</span> <span class="ident">func_name</span> {
+                                <span class="comment">// we must hook this function now</span>
+                                <span class="kw">return</span> <span class="prelude-val">Some</span>(<span class="ident">fun</span>);
+                            }
                         }
                     }
                 }
@@ -1723,6 +1873,48 @@
         }
     }
     <span class="prelude-val">None</span>
+}
+
+<span class="kw">struct</span> <span class="ident">AsyncTraitInfo</span> {
+    <span class="ident">name</span>: <span class="ident">String</span>,
+    <span class="ident">self_type</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">syn</span>::<span class="ident">TypePath</span><span class="op">&gt;</span>,
+}
+
+<span class="comment">// Return the informations necessary to process a function annotated with async-trait.</span>
+<span class="kw">fn</span> <span class="ident">get_async_trait_info</span>(<span class="ident">block</span>: <span class="kw-2">&amp;</span><span class="ident">Block</span>, <span class="ident">block_is_async</span>: <span class="ident">bool</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">AsyncTraitInfo</span><span class="op">&gt;</span> {
+    <span class="kw">let</span> <span class="ident">fun</span> <span class="op">=</span> <span class="ident">get_async_trait_function</span>(<span class="ident">block</span>, <span class="ident">block_is_async</span>)<span class="question-mark">?</span>;
+
+    <span class="comment">// if &quot;_self&quot; is present as an argument, we store its type to be able to rewrite &quot;Self&quot; (the</span>
+    <span class="comment">// parameter type) with the type of &quot;_self&quot;</span>
+    <span class="kw">let</span> <span class="ident">self_type</span> <span class="op">=</span> <span class="ident">fun</span>
+        .<span class="ident">sig</span>
+        .<span class="ident">inputs</span>
+        .<span class="ident">iter</span>()
+        .<span class="ident">map</span>(<span class="op">|</span><span class="ident">arg</span><span class="op">|</span> {
+            <span class="kw">if</span> <span class="kw">let</span> <span class="ident">FnArg</span>::<span class="ident">Typed</span>(<span class="ident">ty</span>) <span class="op">=</span> <span class="ident">arg</span> {
+                <span class="kw">if</span> <span class="kw">let</span> <span class="ident">Pat</span>::<span class="ident">Ident</span>(<span class="ident">PatIdent</span> { <span class="ident">ident</span>, .. }) <span class="op">=</span> <span class="kw-2">&amp;</span><span class="kw-2">*</span><span class="ident">ty</span>.<span class="ident">pat</span> {
+                    <span class="kw">if</span> <span class="ident">ident</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;_self&quot;</span> {
+                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">ty</span> <span class="op">=</span> <span class="kw-2">&amp;</span><span class="kw-2">*</span><span class="ident">ty</span>.<span class="ident">ty</span>;
+                        <span class="comment">// extract the inner type if the argument is &quot;&amp;self&quot; or &quot;&amp;mut self&quot;</span>
+                        <span class="kw">if</span> <span class="kw">let</span> <span class="ident">syn</span>::<span class="ident">Type</span>::<span class="ident">Reference</span>(<span class="ident">syn</span>::<span class="ident">TypeReference</span> { <span class="ident">elem</span>, .. }) <span class="op">=</span> <span class="ident">ty</span> {
+                            <span class="ident">ty</span> <span class="op">=</span> <span class="kw-2">&amp;</span><span class="kw-2">*</span><span class="ident">elem</span>;
+                        }
+                        <span class="kw">if</span> <span class="kw">let</span> <span class="ident">syn</span>::<span class="ident">Type</span>::<span class="ident">Path</span>(<span class="ident">tp</span>) <span class="op">=</span> <span class="ident">ty</span> {
+                            <span class="kw">return</span> <span class="prelude-val">Some</span>(<span class="ident">tp</span>.<span class="ident">clone</span>());
+                        }
+                    }
+                }
+            }
+
+            <span class="prelude-val">None</span>
+        })
+        .<span class="ident">next</span>()
+        .<span class="ident">flatten</span>();
+
+    <span class="prelude-val">Some</span>(<span class="ident">AsyncTraitInfo</span> {
+        <span class="ident">name</span>: <span class="ident">fun</span>.<span class="ident">sig</span>.<span class="ident">ident</span>.<span class="ident">to_string</span>(),
+        <span class="ident">self_type</span>,
+    })
 }
 
 <span class="comment">// Return a path as a String</span>
@@ -1738,6 +1930,30 @@
         }
     }
     <span class="ident">res</span>
+}
+
+<span class="comment">// A visitor struct replacing the &quot;self&quot; and &quot;Self&quot; tokens in user-supplied fields expressions when</span>
+<span class="comment">// the function is generated by async-trait.</span>
+<span class="kw">struct</span> <span class="ident">SelfReplacer</span> {
+    <span class="ident">ty</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">syn</span>::<span class="ident">TypePath</span><span class="op">&gt;</span>,
+}
+
+<span class="kw">impl</span> <span class="ident">syn</span>::<span class="ident">visit_mut</span>::<span class="ident">VisitMut</span> <span class="kw">for</span> <span class="ident">SelfReplacer</span> {
+    <span class="kw">fn</span> <span class="ident">visit_ident_mut</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">id</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">Ident</span>) {
+        <span class="kw">if</span> <span class="ident">id</span> <span class="op">=</span><span class="op">=</span> <span class="string">&quot;self&quot;</span> {
+            <span class="kw-2">*</span><span class="ident">id</span> <span class="op">=</span> <span class="ident">Ident</span>::<span class="ident">new</span>(<span class="string">&quot;_self&quot;</span>, <span class="ident">id</span>.<span class="ident">span</span>())
+        }
+    }
+
+    <span class="kw">fn</span> <span class="ident">visit_type_mut</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">ty</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">syn</span>::<span class="ident">Type</span>) {
+        <span class="kw">if</span> <span class="kw">let</span> <span class="ident">syn</span>::<span class="ident">Type</span>::<span class="ident">Path</span>(<span class="ident">syn</span>::<span class="ident">TypePath</span> { <span class="kw-2">ref</span> <span class="kw-2">mut</span> <span class="ident">path</span>, .. }) <span class="op">=</span> <span class="ident">ty</span> {
+            <span class="kw">if</span> <span class="ident">path_to_string</span>(<span class="ident">path</span>) <span class="op">=</span><span class="op">=</span> <span class="string">&quot;Self&quot;</span> {
+                <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">Some</span>(<span class="kw-2">ref</span> <span class="ident">true_type</span>) <span class="op">=</span> <span class="self">self</span>.<span class="ident">ty</span> {
+                    <span class="kw-2">*</span><span class="ident">path</span> <span class="op">=</span> <span class="ident">true_type</span>.<span class="ident">path</span>.<span class="ident">clone</span>();
+                }
+            }
+        }
+    }
 }
 </pre></div>
 </section><section id="search" class="content hidden"></section><section class="footer"></section><script>window.rootPath = "../../";window.currentCrate = "tracing_attributes";</script><script src="../../main.js"></script><script src="../../source-script.js"></script><script src="../../source-files.js"></script><script defer src="../../search-index.js"></script></body></html>
