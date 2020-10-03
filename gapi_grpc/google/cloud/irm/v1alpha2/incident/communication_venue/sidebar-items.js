@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["ChannelType","The type of channel/venue for incident communications."]]});

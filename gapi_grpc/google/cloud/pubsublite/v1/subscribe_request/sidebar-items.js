@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Request",""]]});
+initSidebarItems({"enum":[["Request","The type of request this is."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Algorithm","The available search algorithms for the Study."]],"mod":[["metric_spec",""],["parameter_spec",""]],"struct":[["MetricSpec","Represents a metric to optimize."],["ParameterSpec","Represents a single parameter to optimize."]]});

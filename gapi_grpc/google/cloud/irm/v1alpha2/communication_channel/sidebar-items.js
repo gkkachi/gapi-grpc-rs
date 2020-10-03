@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Endpoint","An endpoint describes how messages will be delivered."]],"struct":[["Email","A communication channel that delivers messages to an email address."],["NotificationChannel","A communication channel that delivers messages to a Stackdriver notification channel."]]});

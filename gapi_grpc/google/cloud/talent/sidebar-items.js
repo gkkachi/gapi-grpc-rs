@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["v4beta1",""]]});
+initSidebarItems({"mod":[["v4",""],["v4beta1",""]]});

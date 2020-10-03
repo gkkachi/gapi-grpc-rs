@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["graph",""]]});
+initSidebarItems({"mod":[["enterprise",""],["graph",""]]});

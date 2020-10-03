@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["container_analysis_client","Generated client implementations."]]});
+initSidebarItems({"mod":[["container_analysis_client","Generated client implementations."],["vulnerability_occurrences_summary",""]],"struct":[["GetVulnerabilityOccurrencesSummaryRequest","Request to get a vulnerability summary for some set of occurrences."],["VulnerabilityOccurrencesSummary","A summary of how many vulnerability occurrences there are per resource and severity type."]]});

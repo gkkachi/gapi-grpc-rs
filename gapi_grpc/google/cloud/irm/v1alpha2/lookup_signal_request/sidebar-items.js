@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AlternateId","The ID to use for lookup."]]});

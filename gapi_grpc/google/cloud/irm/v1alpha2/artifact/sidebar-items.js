@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Type","Possible types of an artifact."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["output_metadata",""]],"struct":[["InputMetadata","Metadata of the input of a feature."],["OutputMetadata","Metadata of the prediction output to be explained."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["SourceCode","The location of the function source code."],["Trigger","An event that triggers the function."]]});

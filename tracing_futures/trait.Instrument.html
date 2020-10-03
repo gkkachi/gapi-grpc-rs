@@ -4,7 +4,7 @@
 }</pre></div><div class='docblock'><p>Extension trait allowing futures, streams, sinks, and executors to be
 instrumented with a <code>tracing</code> <a href="https://docs.rs/tracing/latest/tracing/span/index.html">span</a>.</p>
 </div>
-            <h2 id='provided-methods' class='small-section-header'>Provided methods<a href='#provided-methods' class='anchor'></a></h2><div class='methods'><h3 id='method.instrument' class='method'><code id='instrument.v'>fn <a href='#method.instrument' class='fnname'>instrument</a>(self, span: <a class="struct" href="../tracing/span/struct.Span.html" title="struct tracing::span::Span">Span</a>) -&gt; <a class="struct" href="../tracing_futures/struct.Instrumented.html" title="struct tracing_futures::Instrumented">Instrumented</a>&lt;Self&gt;</code></h3><div class='docblock'><p>Instruments this type with the provided <code>Span</code>, returning an
+            <h2 id='provided-methods' class='small-section-header'>Provided methods<a href='#provided-methods' class='anchor'></a></h2><div class='methods'><h3 id='method.instrument' class='method'><code>fn <a href='#method.instrument' class='fnname'>instrument</a>(self, span: <a class="struct" href="../tracing/span/struct.Span.html" title="struct tracing::span::Span">Span</a>) -&gt; <a class="struct" href="../tracing_futures/struct.Instrumented.html" title="struct tracing_futures::Instrumented">Instrumented</a>&lt;Self&gt;</code></h3><div class='docblock'><p>Instruments this type with the provided <code>Span</code>, returning an
 <code>Instrumented</code> wrapper.</p>
 <p>If the instrumented type is a future, stream, or sink, the attached <code>Span</code>
 will be <a href="https://docs.rs/tracing/latest/tracing/span/struct.Span.html#method.enter">entered</a> every time it is polled. If the instrumented type
@@ -23,7 +23,7 @@ instrumented by the attached <code>Span</code>.</p>
 <span class="ident">my_future</span>
     .<span class="ident">instrument</span>(<span class="ident">tracing</span>::<span class="macro">info_span</span><span class="macro">!</span>(<span class="string">&quot;my_future&quot;</span>))
     .<span class="kw">await</span></pre></div>
-</div><h3 id='method.in_current_span' class='method'><code id='in_current_span.v'>fn <a href='#method.in_current_span' class='fnname'>in_current_span</a>(self) -&gt; <a class="struct" href="../tracing_futures/struct.Instrumented.html" title="struct tracing_futures::Instrumented">Instrumented</a>&lt;Self&gt;</code></h3><div class='docblock'><p>Instruments this type with the <a href="https://docs.rs/tracing/latest/tracing/span/struct.Span.html#method.current">current</a> <code>Span</code>, returning an
+</div><h3 id='method.in_current_span' class='method'><code>fn <a href='#method.in_current_span' class='fnname'>in_current_span</a>(self) -&gt; <a class="struct" href="../tracing_futures/struct.Instrumented.html" title="struct tracing_futures::Instrumented">Instrumented</a>&lt;Self&gt;</code></h3><div class='docblock'><p>Instruments this type with the <a href="https://docs.rs/tracing/latest/tracing/span/struct.Span.html#method.current">current</a> <code>Span</code>, returning an
 <code>Instrumented</code> wrapper.</p>
 <p>If the instrumented type is a future, stream, or sink, the attached <code>Span</code>
 will be <a href="https://docs.rs/tracing/latest/tracing/span/struct.Span.html#method.enter">entered</a> every time it is polled. If the instrumented type

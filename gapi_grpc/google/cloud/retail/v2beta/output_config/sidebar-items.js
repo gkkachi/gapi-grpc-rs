@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Destination","The configuration of destination for holding output data."]],"struct":[["BigQueryDestination","The BigQuery output destination configuration."],["GcsDestination","The Google Cloud Storage output destination configuration."]]});

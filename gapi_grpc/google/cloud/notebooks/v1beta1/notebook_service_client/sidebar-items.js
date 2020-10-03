@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["NotebookServiceClient","API service for Cloud AI Platform Notebooks."]]});
+initSidebarItems({"struct":[["NotebookServiceClient","API v1beta1 service for Cloud AI Platform Notebooks."]]});

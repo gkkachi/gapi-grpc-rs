@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["User","One of several ways to uniquely identify a user."]]});
