@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source to the Rust file `/home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-0.6.1/src/types.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>types.rs.html -- source</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css"><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script src="../../storage.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="shortcut icon" href="../../favicon.ico"><style type="text/css">#crate-search{background-image:url("../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../prost/index.html'><div class='logo-container'><img src='../../rust-logo.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><pre class="line-numbers"><span id="1">  1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source to the Rust file `/home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-0.6.1/src/types.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>types.rs.html -- source</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled ><script src="../../storage.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="shortcut icon" href="../../favicon.ico"><style type="text/css">#crate-search{background-image:url("../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../prost/index.html'><div class='logo-container rust-logo'><img src='../../rust-logo.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><span class="help-button">?</span>
+                <a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><pre class="line-numbers"><span id="1">  1</span>
 <span id="2">  2</span>
 <span id="3">  3</span>
 <span id="4">  4</span>
@@ -415,17 +416,17 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">bool</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
         <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> {
             <span class="number">2</span>
         } <span class="kw">else</span> {
@@ -443,7 +444,7 @@
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">BufMut</span>,
     {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0</span> {
             <span class="ident">uint32</span>::<span class="ident">encode</span>(<span class="number">1</span>, <span class="self">self</span>, <span class="ident">buf</span>)
         }
     }
@@ -453,18 +454,18 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">uint32</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0</span> {
             <span class="ident">uint32</span>::<span class="ident">encoded_len</span>(<span class="number">1</span>, <span class="self">self</span>)
         } <span class="kw">else</span> {
             <span class="number">0</span>
@@ -481,7 +482,7 @@
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">BufMut</span>,
     {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0</span> {
             <span class="ident">uint64</span>::<span class="ident">encode</span>(<span class="number">1</span>, <span class="self">self</span>, <span class="ident">buf</span>)
         }
     }
@@ -491,18 +492,18 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">uint64</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0</span> {
             <span class="ident">uint64</span>::<span class="ident">encoded_len</span>(<span class="number">1</span>, <span class="self">self</span>)
         } <span class="kw">else</span> {
             <span class="number">0</span>
@@ -519,7 +520,7 @@
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">BufMut</span>,
     {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0</span> {
             <span class="ident">int32</span>::<span class="ident">encode</span>(<span class="number">1</span>, <span class="self">self</span>, <span class="ident">buf</span>)
         }
     }
@@ -529,18 +530,18 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">int32</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0</span> {
             <span class="ident">int32</span>::<span class="ident">encoded_len</span>(<span class="number">1</span>, <span class="self">self</span>)
         } <span class="kw">else</span> {
             <span class="number">0</span>
@@ -557,7 +558,7 @@
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">BufMut</span>,
     {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0</span> {
             <span class="ident">int64</span>::<span class="ident">encode</span>(<span class="number">1</span>, <span class="self">self</span>, <span class="ident">buf</span>)
         }
     }
@@ -567,18 +568,18 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">int64</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0</span> {
             <span class="ident">int64</span>::<span class="ident">encoded_len</span>(<span class="number">1</span>, <span class="self">self</span>)
         } <span class="kw">else</span> {
             <span class="number">0</span>
@@ -595,7 +596,7 @@
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">BufMut</span>,
     {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0.0</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0.0</span> {
             <span class="ident">float</span>::<span class="ident">encode</span>(<span class="number">1</span>, <span class="self">self</span>, <span class="ident">buf</span>)
         }
     }
@@ -605,18 +606,18 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">float</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0.0</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0.0</span> {
             <span class="ident">float</span>::<span class="ident">encoded_len</span>(<span class="number">1</span>, <span class="self">self</span>)
         } <span class="kw">else</span> {
             <span class="number">0</span>
@@ -633,7 +634,7 @@
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">BufMut</span>,
     {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0.0</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0.0</span> {
             <span class="ident">double</span>::<span class="ident">encode</span>(<span class="number">1</span>, <span class="self">self</span>, <span class="ident">buf</span>)
         }
     }
@@ -643,18 +644,18 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">double</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
-        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!</span><span class="op">=</span> <span class="number">0.0</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
+        <span class="kw">if</span> <span class="kw-2">*</span><span class="self">self</span> <span class="op">!=</span> <span class="number">0.0</span> {
             <span class="ident">double</span>::<span class="ident">encoded_len</span>(<span class="number">1</span>, <span class="self">self</span>)
         } <span class="kw">else</span> {
             <span class="number">0</span>
@@ -681,17 +682,17 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">string</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
         <span class="kw">if</span> <span class="op">!</span><span class="self">self</span>.<span class="ident">is_empty</span>() {
             <span class="ident">string</span>::<span class="ident">encoded_len</span>(<span class="number">1</span>, <span class="self">self</span>)
         } <span class="kw">else</span> {
@@ -719,17 +720,17 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
-        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">=</span><span class="op">=</span> <span class="number">1</span> {
+        <span class="kw">if</span> <span class="ident">tag</span> <span class="op">==</span> <span class="number">1</span> {
             <span class="ident">bytes</span>::<span class="ident">merge</span>(<span class="ident">wire_type</span>, <span class="self">self</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         } <span class="kw">else</span> {
             <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
         }
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
         <span class="kw">if</span> <span class="op">!</span><span class="self">self</span>.<span class="ident">is_empty</span>() {
             <span class="ident">bytes</span>::<span class="ident">encoded_len</span>(<span class="number">1</span>, <span class="self">self</span>)
         } <span class="kw">else</span> {
@@ -754,13 +755,13 @@
         <span class="ident">wire_type</span>: <span class="ident">WireType</span>,
         <span class="ident">buf</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">B</span>,
         <span class="ident">ctx</span>: <span class="ident">DecodeContext</span>,
-    ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
+    ) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident">DecodeError</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">B</span>: <span class="ident">Buf</span>,
     {
         <span class="ident">skip_field</span>(<span class="ident">wire_type</span>, <span class="ident">tag</span>, <span class="ident">buf</span>, <span class="ident">ctx</span>)
     }
-    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">usize</span> {
+    <span class="kw">fn</span> <span class="ident">encoded_len</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">usize</span> {
         <span class="number">0</span>
     }
     <span class="kw">fn</span> <span class="ident">clear</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>) {}
