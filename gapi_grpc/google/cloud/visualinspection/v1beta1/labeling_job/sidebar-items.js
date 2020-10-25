@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["JobState","Describes the state of a labeling job."],["LabelingConfig",""]]});

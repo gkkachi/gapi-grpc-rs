@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["AnnotationType","Annotation type of the Annotation."]],"mod":[["source",""]],"struct":[["Source","Source of the Annotation."]]});

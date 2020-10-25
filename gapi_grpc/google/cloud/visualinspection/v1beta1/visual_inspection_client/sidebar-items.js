@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["VisualInspectionClient","Visual Inspection service enables users to train and manage solutions for visually inspecting parts."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["SourceType","Source type of the Annotation."]]});

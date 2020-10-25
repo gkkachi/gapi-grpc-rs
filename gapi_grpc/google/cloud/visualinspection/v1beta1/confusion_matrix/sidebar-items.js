@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Row","Individual row for the confusion matrix."]]});
