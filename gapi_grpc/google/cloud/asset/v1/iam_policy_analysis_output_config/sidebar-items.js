@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Destination","IAM policy analysis export destination."]],"mod":[["big_query_destination",""]],"struct":[["BigQueryDestination","A BigQuery destination."],["GcsDestination","A Cloud Storage location."]]});

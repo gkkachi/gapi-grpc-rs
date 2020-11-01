@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ManagementClient","Service Interface for the GA Management API (App+Web)."]]});

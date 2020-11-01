@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["admin",""],["data",""],["management",""]]});
+initSidebarItems({"mod":[["admin",""],["data",""]]});
