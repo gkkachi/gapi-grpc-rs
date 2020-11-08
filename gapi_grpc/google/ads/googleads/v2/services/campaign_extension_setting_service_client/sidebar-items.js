@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CampaignExtensionSettingServiceClient","Service to manage campaign extension settings."]]});

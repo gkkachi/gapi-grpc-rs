@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["RuleBasedUserList","Subtypes of rule based user lists."]]});

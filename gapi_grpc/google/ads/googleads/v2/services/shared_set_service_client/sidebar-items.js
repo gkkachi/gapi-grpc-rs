@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["SharedSetServiceClient","Service to manage shared sets."]]});

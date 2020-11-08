@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["FeedItemTargetDevice","Possible data types for a feed item target device."]]});

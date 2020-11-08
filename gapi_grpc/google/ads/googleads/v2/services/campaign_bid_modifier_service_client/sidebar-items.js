@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CampaignBidModifierServiceClient","Service to manage campaign bid modifiers."]]});

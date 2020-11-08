@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["BudgetDeliveryMethod","Possible delivery methods of a Budget."]]});

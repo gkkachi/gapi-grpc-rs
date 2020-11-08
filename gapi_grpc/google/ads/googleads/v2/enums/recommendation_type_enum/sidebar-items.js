@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["RecommendationType","Types of recommendations."]]});

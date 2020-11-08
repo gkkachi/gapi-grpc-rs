@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["DetailPlacementViewServiceClient","Service to fetch Detail Placement views."]]});

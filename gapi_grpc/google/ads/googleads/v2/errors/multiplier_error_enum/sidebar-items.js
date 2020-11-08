@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["MultiplierError","Enum describing possible multiplier errors."]]});

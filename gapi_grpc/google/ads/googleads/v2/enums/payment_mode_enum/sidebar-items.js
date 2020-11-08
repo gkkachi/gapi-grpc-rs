@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["PaymentMode","Enum describing possible payment modes."]]});

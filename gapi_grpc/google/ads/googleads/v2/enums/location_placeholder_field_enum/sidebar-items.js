@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["LocationPlaceholderField","Possible values for Location placeholder fields."]]});

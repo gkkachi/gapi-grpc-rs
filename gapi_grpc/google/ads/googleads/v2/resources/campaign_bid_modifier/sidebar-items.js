@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Criterion","The criterion of this campaign bid modifier."]]});

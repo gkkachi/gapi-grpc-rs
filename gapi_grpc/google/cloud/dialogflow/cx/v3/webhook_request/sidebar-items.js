@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["intent_info",""]],"struct":[["FulfillmentInfo","Represents fulfillment information communicated to the webhook."],["IntentInfo","Represents intent information communicated to the webhook."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AdSharingError","Enum describing possible ad sharing errors."]]});

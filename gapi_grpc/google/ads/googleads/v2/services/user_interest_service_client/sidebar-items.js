@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["UserInterestServiceClient","Service to fetch Google Ads User Interest."]]});

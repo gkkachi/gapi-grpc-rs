@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["FeedServiceClient","Service to manage feeds."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AuthorizationError","Enum describing possible authorization errors."]]});

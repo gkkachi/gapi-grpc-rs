@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["DismissRecommendationOperation","Operation to dismiss a single recommendation identified by resource_name."]]});

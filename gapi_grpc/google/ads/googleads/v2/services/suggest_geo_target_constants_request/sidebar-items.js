@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Query","Required. A selector of geo target constants."]],"struct":[["GeoTargets","A list of geo target constant resource names."],["LocationNames","A list of location names."]]});

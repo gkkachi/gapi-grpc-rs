@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["AdGroupFeedServiceClient","Service to manage ad group feeds."]]});

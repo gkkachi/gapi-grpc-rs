@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CampaignExperimentServiceClient","CampaignExperimentService manages the life cycle of campaign experiments. It is used to create new experiments from drafts, modify experiment properties, promote changes in an experiment back to its base campaign, graduate experiments into new stand-alone campaigns, and to remove an experiment."]]});

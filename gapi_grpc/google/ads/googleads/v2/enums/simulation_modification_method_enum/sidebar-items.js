@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["SimulationModificationMethod","Enum describing the method by which a simulation modifies a field."]]});

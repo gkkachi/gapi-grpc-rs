@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["LocationGroupRadiusUnits","The unit of radius distance in location group (e.g. MILES)"]]});

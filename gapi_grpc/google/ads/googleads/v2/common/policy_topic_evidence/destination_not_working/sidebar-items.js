@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Reason","Indicates the reason of the DESTINATION_NOT_WORKING policy finding."]]});

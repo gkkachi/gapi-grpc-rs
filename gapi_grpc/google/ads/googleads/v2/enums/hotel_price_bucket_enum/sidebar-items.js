@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["HotelPriceBucket","Enum describing possible hotel price buckets."]]});

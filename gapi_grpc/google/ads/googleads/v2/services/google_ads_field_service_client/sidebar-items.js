@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["GoogleAdsFieldServiceClient","Service to fetch Google Ads API fields."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["CampaignBudgetError","Enum describing possible campaign budget errors."]]});

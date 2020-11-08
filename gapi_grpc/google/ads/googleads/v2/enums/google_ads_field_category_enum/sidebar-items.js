@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["GoogleAdsFieldCategory","The category of the artifact."]]});

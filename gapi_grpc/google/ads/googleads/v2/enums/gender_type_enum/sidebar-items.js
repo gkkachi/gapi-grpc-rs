@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["GenderType","The type of demographic genders (e.g. female)."]]});

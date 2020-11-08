@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["MatchingFunctionOperator","Possible operators in a matching function."]]});

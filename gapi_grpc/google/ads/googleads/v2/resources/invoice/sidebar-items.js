@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["AccountBudgetSummary","Represents a summarized account budget billable cost."]]});

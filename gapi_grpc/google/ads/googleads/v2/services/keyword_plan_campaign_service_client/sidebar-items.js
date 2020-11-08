@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["KeywordPlanCampaignServiceClient","Service to manage Keyword Plan campaigns."]]});

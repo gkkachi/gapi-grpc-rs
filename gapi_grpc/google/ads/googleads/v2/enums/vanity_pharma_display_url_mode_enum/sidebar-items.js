@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["VanityPharmaDisplayUrlMode","Enum describing possible display modes for vanity pharma URLs."]]});

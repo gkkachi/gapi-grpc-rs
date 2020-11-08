@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["FlightPlaceholderField","Possible values for Flight placeholder fields."]]});

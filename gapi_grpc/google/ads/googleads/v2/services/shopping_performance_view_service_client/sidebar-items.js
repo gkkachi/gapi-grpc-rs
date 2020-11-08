@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ShoppingPerformanceViewServiceClient","Service to fetch Shopping performance views."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["BillingSetupStatus","The possible statuses of a BillingSetup."]]});

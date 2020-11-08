@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["PromotionExtensionOccasion","A promotion extension occasion."]]});

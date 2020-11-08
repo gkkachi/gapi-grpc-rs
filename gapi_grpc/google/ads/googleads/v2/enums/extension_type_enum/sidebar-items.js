@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["ExtensionType","Possible data types for an extension in an extension setting."]]});

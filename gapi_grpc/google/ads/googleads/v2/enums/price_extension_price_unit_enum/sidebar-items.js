@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["PriceExtensionPriceUnit","Price extension price unit."]]});

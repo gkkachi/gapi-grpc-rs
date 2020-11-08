@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["JobPlaceholderField","Possible values for Job placeholder fields."]]});

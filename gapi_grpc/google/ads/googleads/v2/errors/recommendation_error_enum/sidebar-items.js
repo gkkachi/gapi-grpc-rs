@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["RecommendationError","Enum describing possible errors from applying a recommendation."]]});

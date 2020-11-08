@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["ExtensionFeedItemError","Enum describing possible extension feed item errors."]]});

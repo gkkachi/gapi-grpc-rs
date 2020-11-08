@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AppPaymentModelType","Enum describing possible app payment models."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["UserListCombinedRuleOperator","Enum describing possible user list combined rule operators."]]});

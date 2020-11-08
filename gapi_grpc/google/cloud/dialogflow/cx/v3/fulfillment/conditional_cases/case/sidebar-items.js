@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["case_content",""]],"struct":[["CaseContent","The list of messages or conditional cases to activate for this case."]]});

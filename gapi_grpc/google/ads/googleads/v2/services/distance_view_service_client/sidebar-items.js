@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["DistanceViewServiceClient","Service to fetch distance views."]]});

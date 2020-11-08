@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["TargetCpaOptInRecommendationOption","The Target CPA opt-in option with impact estimate."]]});

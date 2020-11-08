@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["NewResourceCreationError","Enum describing possible new resource creation errors."]]});

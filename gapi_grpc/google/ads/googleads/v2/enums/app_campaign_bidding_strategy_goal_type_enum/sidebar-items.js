@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AppCampaignBiddingStrategyGoalType","Goal type of App campaign BiddingStrategy."]]});

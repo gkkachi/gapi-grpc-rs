@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["CampaignExperimentTrafficSplitType","Enum of strategies for splitting traffic between base and experiment campaigns in campaign experiment."]]});

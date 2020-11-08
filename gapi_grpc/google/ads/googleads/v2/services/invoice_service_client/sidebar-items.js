@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["InvoiceServiceClient","A service to fetch invoices issued for a billing setup during a given month."]]});

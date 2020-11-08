@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["FeedPlaceholderViewServiceClient","Service to fetch feed placeholder views."]]});

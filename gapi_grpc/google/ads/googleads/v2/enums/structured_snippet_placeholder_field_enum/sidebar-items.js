@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["StructuredSnippetPlaceholderField","Possible values for Structured Snippet placeholder fields."]]});

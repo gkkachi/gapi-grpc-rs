@@ -1053,17 +1053,6 @@
 <span id="1052">1052</span>
 <span id="1053">1053</span>
 <span id="1054">1054</span>
-<span id="1055">1055</span>
-<span id="1056">1056</span>
-<span id="1057">1057</span>
-<span id="1058">1058</span>
-<span id="1059">1059</span>
-<span id="1060">1060</span>
-<span id="1061">1061</span>
-<span id="1062">1062</span>
-<span id="1063">1063</span>
-<span id="1064">1064</span>
-<span id="1065">1065</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">google</span> {
@@ -1079,23 +1068,6 @@
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">googleads</span> {
-            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v2</span> {
-                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">common</span> {
-                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v2.common&quot;</span>);
-                }
-                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">enums</span> {
-                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v2.enums&quot;</span>);
-                }
-                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">errors</span> {
-                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v2.errors&quot;</span>);
-                }
-                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">resources</span> {
-                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v2.resources&quot;</span>);
-                }
-                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">services</span> {
-                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v2.services&quot;</span>);
-                }
-            }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v3</span> {
                 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">common</span> {
                     <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v3.common&quot;</span>);
@@ -1255,6 +1227,9 @@
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">aiplatform</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">logging</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.aiplatform.logging&quot;</span>);
+            }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.aiplatform.v1beta1&quot;</span>);
             }
@@ -1387,6 +1362,9 @@
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">dialogflow</span> {
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">cx</span> {
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v3</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.dialogflow.cx.v3&quot;</span>);
+                }
                 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v3beta1</span> {
                     <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.dialogflow.cx.v3beta1&quot;</span>);
                 }

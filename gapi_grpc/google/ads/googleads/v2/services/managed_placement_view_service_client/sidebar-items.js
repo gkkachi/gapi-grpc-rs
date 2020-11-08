@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ManagedPlacementViewServiceClient","Service to manage Managed Placement views."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["LandingPageViewServiceClient","Service to fetch landing page views."]]});

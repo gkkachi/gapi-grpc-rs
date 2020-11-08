@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["PaidOrganicSearchTermViewServiceClient","Service to fetch paid organic search term views."]]});

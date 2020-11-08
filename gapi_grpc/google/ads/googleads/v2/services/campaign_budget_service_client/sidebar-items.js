@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CampaignBudgetServiceClient","Service to manage campaign budgets."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["CustomerError","Set of errors that are related to requests dealing with Customer."]]});

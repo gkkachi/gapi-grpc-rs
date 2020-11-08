@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["BiddingStrategyType","Enum describing possible bidding strategy types."]]});

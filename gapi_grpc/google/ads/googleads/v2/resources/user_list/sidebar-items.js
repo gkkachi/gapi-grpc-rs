@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["UserList","The user list."]]});

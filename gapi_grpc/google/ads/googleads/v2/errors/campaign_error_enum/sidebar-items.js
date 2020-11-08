@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["CampaignError","Enum describing possible campaign errors."]]});

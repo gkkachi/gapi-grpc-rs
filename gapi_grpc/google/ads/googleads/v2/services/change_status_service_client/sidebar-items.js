@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ChangeStatusServiceClient","Service to fetch change statuses."]]});

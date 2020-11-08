@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["DisplayKeywordViewServiceClient","Service to manage display keyword views."]]});
