@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["DataLabelingServiceClient",""]]});
+initSidebarItems({"struct":[["DataLabelingServiceClient","Service for the AI Platform Data Labeling API."]]});

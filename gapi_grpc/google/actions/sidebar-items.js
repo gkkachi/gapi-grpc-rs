@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["type",""]]});
+initSidebarItems({"mod":[["sdk",""],["type",""]]});

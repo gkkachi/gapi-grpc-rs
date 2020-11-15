@@ -1053,12 +1053,71 @@
 <span id="1052">1052</span>
 <span id="1053">1053</span>
 <span id="1054">1054</span>
+<span id="1055">1055</span>
+<span id="1056">1056</span>
+<span id="1057">1057</span>
+<span id="1058">1058</span>
+<span id="1059">1059</span>
+<span id="1060">1060</span>
+<span id="1061">1061</span>
+<span id="1062">1062</span>
+<span id="1063">1063</span>
+<span id="1064">1064</span>
+<span id="1065">1065</span>
+<span id="1066">1066</span>
+<span id="1067">1067</span>
+<span id="1068">1068</span>
+<span id="1069">1069</span>
+<span id="1070">1070</span>
+<span id="1071">1071</span>
+<span id="1072">1072</span>
+<span id="1073">1073</span>
+<span id="1074">1074</span>
+<span id="1075">1075</span>
+<span id="1076">1076</span>
+<span id="1077">1077</span>
+<span id="1078">1078</span>
+<span id="1079">1079</span>
+<span id="1080">1080</span>
+<span id="1081">1081</span>
+<span id="1082">1082</span>
+<span id="1083">1083</span>
+<span id="1084">1084</span>
+<span id="1085">1085</span>
+<span id="1086">1086</span>
+<span id="1087">1087</span>
+<span id="1088">1088</span>
+<span id="1089">1089</span>
+<span id="1090">1090</span>
+<span id="1091">1091</span>
+<span id="1092">1092</span>
+<span id="1093">1093</span>
+<span id="1094">1094</span>
+<span id="1095">1095</span>
+<span id="1096">1096</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">google</span> {
     <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">actions</span> {
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">r#type</span> {
             <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.actions.r#type&quot;</span>);
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">sdk</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v2</span> {
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">conversation</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.actions.sdk.v2.conversation&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">interactionmodel</span> {
+                    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">prompt</span> {
+                        <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.actions.sdk.v2.interactionmodel.prompt&quot;</span>);
+                    }
+                    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">r#type</span> {
+                        <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.actions.sdk.v2.interactionmodel.r#type&quot;</span>);
+                    }
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.actions.sdk.v2.interactionmodel&quot;</span>);
+                }
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.actions.sdk.v2&quot;</span>);
+            }
         }
     }
     <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ads</span> {
@@ -1117,6 +1176,23 @@
                 }
                 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">services</span> {
                     <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v5.services&quot;</span>);
+                }
+            }
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v6</span> {
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">common</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v6.common&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">enums</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v6.enums&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">errors</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v6.errors&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">resources</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v6.resources&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">services</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.ads.googleads.v6.services&quot;</span>);
                 }
             }
         }
@@ -1358,6 +1434,11 @@
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta2</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.dataproc.v1beta2&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">dataqna</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1alpha</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.dataqna.v1alpha&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">dialogflow</span> {
@@ -1627,6 +1708,9 @@
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">servicedirectory</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.servicedirectory.v1&quot;</span>);
+            }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.servicedirectory.v1beta1&quot;</span>);
             }
