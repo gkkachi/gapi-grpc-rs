@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AnnotationSetType","Type of the Annotations in this AnnotationSet. Annotations in this AnnotationSet must be of the same type."]]});

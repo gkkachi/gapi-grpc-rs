@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Type","The predefined type of this Solution."]],"struct":[["AssemblyInspectionOptions","Options for an assembly inspection Solution."],["CosmeticInspectionOptions","Options for cosmetic inspection Solution."],["CustomInspectionOptions","Options for a custom inspection Solution."]]});

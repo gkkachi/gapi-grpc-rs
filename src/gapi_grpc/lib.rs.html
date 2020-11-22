@@ -1095,6 +1095,28 @@
 <span id="1094">1094</span>
 <span id="1095">1095</span>
 <span id="1096">1096</span>
+<span id="1097">1097</span>
+<span id="1098">1098</span>
+<span id="1099">1099</span>
+<span id="1100">1100</span>
+<span id="1101">1101</span>
+<span id="1102">1102</span>
+<span id="1103">1103</span>
+<span id="1104">1104</span>
+<span id="1105">1105</span>
+<span id="1106">1106</span>
+<span id="1107">1107</span>
+<span id="1108">1108</span>
+<span id="1109">1109</span>
+<span id="1110">1110</span>
+<span id="1111">1111</span>
+<span id="1112">1112</span>
+<span id="1113">1113</span>
+<span id="1114">1114</span>
+<span id="1115">1115</span>
+<span id="1116">1116</span>
+<span id="1117">1117</span>
+<span id="1118">1118</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">google</span> {
@@ -1307,6 +1329,33 @@
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.aiplatform.logging&quot;</span>);
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">schema</span> {
+                    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">predict</span> {
+                        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">instance</span> {
+                            <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(
+                                <span class="string">&quot;google.cloud.aiplatform.v1beta1.schema.predict.instance&quot;</span>
+                            );
+                        }
+                        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">params</span> {
+                            <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(
+                                <span class="string">&quot;google.cloud.aiplatform.v1beta1.schema.predict.params&quot;</span>
+                            );
+                        }
+                        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">prediction</span> {
+                            <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(
+                                <span class="string">&quot;google.cloud.aiplatform.v1beta1.schema.predict.prediction&quot;</span>
+                            );
+                        }
+                    }
+                    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">trainingjob</span> {
+                        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">definition</span> {
+                            <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(
+                                <span class="string">&quot;google.cloud.aiplatform.v1beta1.schema.trainingjob.definition&quot;</span>
+                            );
+                        }
+                    }
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.aiplatform.v1beta1.schema&quot;</span>);
+                }
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.aiplatform.v1beta1&quot;</span>);
             }
         }
@@ -1805,11 +1854,6 @@
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1p4beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.vision.v1p4beta1&quot;</span>);
-            }
-        }
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">visualinspection</span> {
-            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
-                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.visualinspection.v1beta1&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">webrisk</span> {

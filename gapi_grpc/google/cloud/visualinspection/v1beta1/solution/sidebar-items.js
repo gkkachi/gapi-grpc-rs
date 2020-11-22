@@ -1,1 +1,0 @@
-initSidebarItems({"mod":[["solution_type",""]],"struct":[["SolutionType","A predefined SolutionType."],["TrainingConfig","Configuration specific to training parameters."]]});
