@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["release_channel_config",""]],"struct":[["ReleaseChannelConfig","ReleaseChannelConfig exposes configuration for a release channel."]]});
