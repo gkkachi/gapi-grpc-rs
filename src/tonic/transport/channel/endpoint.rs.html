@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source to the Rust file `/home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/tonic-0.2.1/src/transport/channel/endpoint.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>endpoint.rs.html -- source</title><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled ><script src="../../../../storage.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="shortcut icon" href="../../../../favicon.ico"><style type="text/css">#crate-search{background-image:url("../../../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../../../tonic/index.html'><div class='logo-container'><img src='https://github.com/hyperium/tonic/raw/master/.github/assets/tonic-docs.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><span class="help-button">?</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source to the Rust file `/home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/tonic-0.2.1/src/transport/channel/endpoint.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>endpoint.rs.html -- source</title><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled ><script src="../../../../storage.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg">
+<link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png">
+<link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><style type="text/css">#crate-search{background-image:url("../../../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../../../tonic/index.html'><div class='logo-container'><img src='https://github.com/hyperium/tonic/raw/master/.github/assets/tonic-docs.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><span class="help-button">?</span>
                 <a id="settings-menu" href="../../../../settings.html"><img src="../../../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><pre class="line-numbers"><span id="1">  1</span>
 <span id="2">  2</span>
 <span id="3">  3</span>
@@ -332,7 +334,7 @@
     <span class="comment">// FIXME: determine if we want to expose this or not. This is really</span>
     <span class="comment">// just used in codegen for a shortcut.</span>
     <span class="attribute">#[<span class="ident">doc</span>(<span class="ident">hidden</span>)]</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">new</span><span class="op">&lt;</span><span class="ident">D</span><span class="op">&gt;</span>(<span class="ident">dst</span>: <span class="ident">D</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="ident">Error</span><span class="op">&gt;</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">new</span><span class="op">&lt;</span><span class="ident">D</span><span class="op">&gt;</span>(<span class="ident">dst</span>: <span class="ident">D</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="ident">Error</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">D</span>: <span class="ident">TryInto</span><span class="op">&lt;</span><span class="self">Self</span><span class="op">&gt;</span>,
         <span class="ident">D</span>::<span class="ident">Error</span>: <span class="ident">Into</span><span class="op">&lt;</span><span class="kw">crate</span>::<span class="ident">Error</span><span class="op">&gt;</span>,
@@ -347,7 +349,7 @@
     <span class="doccomment">/// # use tonic::transport::Endpoint;</span>
     <span class="doccomment">/// Endpoint::from_static(&quot;https://example.com&quot;);</span>
     <span class="doccomment">/// ```</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_static</span>(<span class="ident">s</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_static</span>(<span class="ident">s</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="kw">let</span> <span class="ident">uri</span> <span class="op">=</span> <span class="ident">Uri</span>::<span class="ident">from_static</span>(<span class="ident">s</span>);
         <span class="self">Self</span>::<span class="ident">from</span>(<span class="ident">uri</span>)
     }
@@ -358,7 +360,7 @@
     <span class="doccomment">/// # use tonic::transport::Endpoint;</span>
     <span class="doccomment">/// Endpoint::from_shared(&quot;https://example.com&quot;.to_string());</span>
     <span class="doccomment">/// ```</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_shared</span>(<span class="ident">s</span>: <span class="kw">impl</span> <span class="ident">Into</span><span class="op">&lt;</span><span class="ident">Bytes</span><span class="op">&gt;</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="ident">InvalidUri</span><span class="op">&gt;</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_shared</span>(<span class="ident">s</span>: <span class="kw">impl</span> <span class="ident">Into</span><span class="op">&lt;</span><span class="ident">Bytes</span><span class="op">&gt;</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="ident">InvalidUri</span><span class="op">&gt;</span> {
         <span class="kw">let</span> <span class="ident">uri</span> <span class="op">=</span> <span class="ident">Uri</span>::<span class="ident">from_maybe_shared</span>(<span class="ident">s</span>.<span class="ident">into</span>())<span class="question-mark">?</span>;
         <span class="prelude-val">Ok</span>(<span class="self">Self</span>::<span class="ident">from</span>(<span class="ident">uri</span>))
     }
@@ -371,7 +373,7 @@
     <span class="doccomment">/// # let mut builder = Endpoint::from_static(&quot;https://example.com&quot;);</span>
     <span class="doccomment">/// builder.timeout(Duration::from_secs(5));</span>
     <span class="doccomment">/// ```</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">timeout</span>(<span class="self">self</span>, <span class="ident">dur</span>: <span class="ident">Duration</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">timeout</span>(<span class="self">self</span>, <span class="ident">dur</span>: <span class="ident">Duration</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">timeout</span>: <span class="prelude-val">Some</span>(<span class="ident">dur</span>),
             ..<span class="self">self</span>
@@ -386,7 +388,7 @@
     <span class="doccomment">///</span>
     <span class="doccomment">/// Default is no keepalive (`None`)</span>
     <span class="doccomment">///</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">tcp_keepalive</span>(<span class="self">self</span>, <span class="ident">tcp_keepalive</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">Duration</span><span class="op">&gt;</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">tcp_keepalive</span>(<span class="self">self</span>, <span class="ident">tcp_keepalive</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">Duration</span><span class="op">&gt;</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">tcp_keepalive</span>,
             ..<span class="self">self</span>
@@ -400,7 +402,7 @@
     <span class="doccomment">/// # let mut builder = Endpoint::from_static(&quot;https://example.com&quot;);</span>
     <span class="doccomment">/// builder.concurrency_limit(256);</span>
     <span class="doccomment">/// ```</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">concurrency_limit</span>(<span class="self">self</span>, <span class="ident">limit</span>: <span class="ident">usize</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">concurrency_limit</span>(<span class="self">self</span>, <span class="ident">limit</span>: <span class="ident">usize</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">concurrency_limit</span>: <span class="prelude-val">Some</span>(<span class="ident">limit</span>),
             ..<span class="self">self</span>
@@ -415,7 +417,7 @@
     <span class="doccomment">/// # let mut builder = Endpoint::from_static(&quot;https://example.com&quot;);</span>
     <span class="doccomment">/// builder.rate_limit(32, Duration::from_secs(1));</span>
     <span class="doccomment">/// ```</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">rate_limit</span>(<span class="self">self</span>, <span class="ident">limit</span>: <span class="ident">u64</span>, <span class="ident">duration</span>: <span class="ident">Duration</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">rate_limit</span>(<span class="self">self</span>, <span class="ident">limit</span>: <span class="ident">u64</span>, <span class="ident">duration</span>: <span class="ident">Duration</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">rate_limit</span>: <span class="prelude-val">Some</span>((<span class="ident">limit</span>, <span class="ident">duration</span>)),
             ..<span class="self">self</span>
@@ -428,7 +430,7 @@
     <span class="doccomment">/// Default is 65,535</span>
     <span class="doccomment">///</span>
     <span class="doccomment">/// [spec]: https://http2.github.io/http2-spec/#SETTINGS_INITIAL_WINDOW_SIZE</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">initial_stream_window_size</span>(<span class="self">self</span>, <span class="ident">sz</span>: <span class="kw">impl</span> <span class="ident">Into</span><span class="op">&lt;</span><span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;&gt;</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">initial_stream_window_size</span>(<span class="self">self</span>, <span class="ident">sz</span>: <span class="kw">impl</span> <span class="ident">Into</span><span class="op">&lt;</span><span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span><span class="op">&gt;</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">init_stream_window_size</span>: <span class="ident">sz</span>.<span class="ident">into</span>(),
             ..<span class="self">self</span>
@@ -438,7 +440,7 @@
     <span class="doccomment">/// Sets the max connection-level flow control for HTTP2</span>
     <span class="doccomment">///</span>
     <span class="doccomment">/// Default is 65,535</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">initial_connection_window_size</span>(<span class="self">self</span>, <span class="ident">sz</span>: <span class="kw">impl</span> <span class="ident">Into</span><span class="op">&lt;</span><span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;&gt;</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">initial_connection_window_size</span>(<span class="self">self</span>, <span class="ident">sz</span>: <span class="kw">impl</span> <span class="ident">Into</span><span class="op">&lt;</span><span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span><span class="op">&gt;</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">init_connection_window_size</span>: <span class="ident">sz</span>.<span class="ident">into</span>(),
             ..<span class="self">self</span>
@@ -448,7 +450,7 @@
     <span class="doccomment">/// Configures TLS for the endpoint.</span>
     <span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">feature</span> <span class="op">=</span> <span class="string">&quot;tls&quot;</span>)]</span>
     <span class="attribute">#[<span class="ident">cfg_attr</span>(<span class="ident">docsrs</span>, <span class="ident">doc</span>(<span class="ident">cfg</span>(<span class="ident">feature</span> <span class="op">=</span> <span class="string">&quot;tls&quot;</span>)))]</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">tls_config</span>(<span class="self">self</span>, <span class="ident">tls_config</span>: <span class="ident">ClientTlsConfig</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">tls_config</span>(<span class="self">self</span>, <span class="ident">tls_config</span>: <span class="ident">ClientTlsConfig</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">tls</span>: <span class="prelude-val">Some</span>(<span class="ident">tls_config</span>.<span class="ident">tls_connector</span>(<span class="self">self</span>.<span class="ident">uri</span>.<span class="ident">clone</span>()).<span class="ident">unwrap</span>()),
             ..<span class="self">self</span>
@@ -456,7 +458,7 @@
     }
 
     <span class="doccomment">/// Set the value of `TCP_NODELAY` option for accepted connections. Enabled by default.</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">tcp_nodelay</span>(<span class="self">self</span>, <span class="ident">enabled</span>: <span class="ident">bool</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">tcp_nodelay</span>(<span class="self">self</span>, <span class="ident">enabled</span>: <span class="ident">bool</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">tcp_nodelay</span>: <span class="ident">enabled</span>,
             ..<span class="self">self</span>
@@ -464,7 +466,7 @@
     }
 
     <span class="doccomment">/// Set http2 KEEP_ALIVE_INTERVAL. Uses `hyper`&#39;s default otherwise.</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">http2_keep_alive_interval</span>(<span class="self">self</span>, <span class="ident">interval</span>: <span class="ident">Duration</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">http2_keep_alive_interval</span>(<span class="self">self</span>, <span class="ident">interval</span>: <span class="ident">Duration</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">http2_keep_alive_interval</span>: <span class="prelude-val">Some</span>(<span class="ident">interval</span>),
             ..<span class="self">self</span>
@@ -472,7 +474,7 @@
     }
 
     <span class="doccomment">/// Set http2 KEEP_ALIVE_TIMEOUT. Uses `hyper`&#39;s default otherwise.</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">keep_alive_timeout</span>(<span class="self">self</span>, <span class="ident">duration</span>: <span class="ident">Duration</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">keep_alive_timeout</span>(<span class="self">self</span>, <span class="ident">duration</span>: <span class="ident">Duration</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">http2_keep_alive_timeout</span>: <span class="prelude-val">Some</span>(<span class="ident">duration</span>),
             ..<span class="self">self</span>
@@ -480,7 +482,7 @@
     }
 
     <span class="doccomment">/// Set http2 KEEP_ALIVE_WHILE_IDLE. Uses `hyper`&#39;s default otherwise.</span>
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">keep_alive_while_idle</span>(<span class="self">self</span>, <span class="ident">enabled</span>: <span class="ident">bool</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">keep_alive_while_idle</span>(<span class="self">self</span>, <span class="ident">enabled</span>: <span class="ident">bool</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="ident">Endpoint</span> {
             <span class="ident">http2_keep_alive_while_idle</span>: <span class="prelude-val">Some</span>(<span class="ident">enabled</span>),
             ..<span class="self">self</span>
@@ -488,7 +490,7 @@
     }
 
     <span class="doccomment">/// Create a channel from this config.</span>
-    <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">connect</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">Channel</span>, <span class="ident">Error</span><span class="op">&gt;</span> {
+    <span class="kw">pub</span> <span class="ident">async</span> <span class="kw">fn</span> <span class="ident">connect</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">Channel</span>, <span class="ident">Error</span><span class="op">&gt;</span> {
         <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">http</span> <span class="op">=</span> <span class="ident">hyper</span>::<span class="ident">client</span>::<span class="ident">connect</span>::<span class="ident">HttpConnector</span>::<span class="ident">new</span>();
         <span class="ident">http</span>.<span class="ident">enforce_http</span>(<span class="bool-val">false</span>);
         <span class="ident">http</span>.<span class="ident">set_nodelay</span>(<span class="self">self</span>.<span class="ident">tcp_nodelay</span>);
@@ -500,11 +502,11 @@
         <span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">not</span>(<span class="ident">feature</span> <span class="op">=</span> <span class="string">&quot;tls&quot;</span>))]</span>
         <span class="kw">let</span> <span class="ident">connector</span> <span class="op">=</span> <span class="ident">service</span>::<span class="ident">connector</span>(<span class="ident">http</span>);
 
-        <span class="ident">Channel</span>::<span class="ident">connect</span>(<span class="ident">connector</span>, <span class="self">self</span>.<span class="ident">clone</span>()).<span class="kw">await</span>
+        <span class="ident">Channel</span>::<span class="ident">connect</span>(<span class="ident">connector</span>, <span class="self">self</span>.<span class="ident">clone</span>()).<span class="ident">await</span>
     }
 
     <span class="doccomment">/// Connect with a custom connector.</span>
-    <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">connect_with_connector</span><span class="op">&lt;</span><span class="ident">C</span><span class="op">&gt;</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">connector</span>: <span class="ident">C</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">Channel</span>, <span class="ident">Error</span><span class="op">&gt;</span>
+    <span class="kw">pub</span> <span class="ident">async</span> <span class="kw">fn</span> <span class="ident">connect_with_connector</span><span class="op">&lt;</span><span class="ident">C</span><span class="op">&gt;</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">connector</span>: <span class="ident">C</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">Channel</span>, <span class="ident">Error</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">C</span>: <span class="ident">MakeConnection</span><span class="op">&lt;</span><span class="ident">Uri</span><span class="op">&gt;</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="lifetime">&#39;static</span>,
         <span class="ident">C</span>::<span class="ident">Connection</span>: <span class="ident">Unpin</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="lifetime">&#39;static</span>,
@@ -517,12 +519,12 @@
         <span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">not</span>(<span class="ident">feature</span> <span class="op">=</span> <span class="string">&quot;tls&quot;</span>))]</span>
         <span class="kw">let</span> <span class="ident">connector</span> <span class="op">=</span> <span class="ident">service</span>::<span class="ident">connector</span>(<span class="ident">connector</span>);
 
-        <span class="ident">Channel</span>::<span class="ident">connect</span>(<span class="ident">connector</span>, <span class="self">self</span>.<span class="ident">clone</span>()).<span class="kw">await</span>
+        <span class="ident">Channel</span>::<span class="ident">connect</span>(<span class="ident">connector</span>, <span class="self">self</span>.<span class="ident">clone</span>()).<span class="ident">await</span>
     }
 }
 
 <span class="kw">impl</span> <span class="ident">From</span><span class="op">&lt;</span><span class="ident">Uri</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">Endpoint</span> {
-    <span class="kw">fn</span> <span class="ident">from</span>(<span class="ident">uri</span>: <span class="ident">Uri</span>) <span class="op">-&gt;</span> <span class="self">Self</span> {
+    <span class="kw">fn</span> <span class="ident">from</span>(<span class="ident">uri</span>: <span class="ident">Uri</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
         <span class="self">Self</span> {
             <span class="ident">uri</span>,
             <span class="ident">concurrency_limit</span>: <span class="prelude-val">None</span>,
@@ -545,7 +547,7 @@
 <span class="kw">impl</span> <span class="ident">TryFrom</span><span class="op">&lt;</span><span class="ident">Bytes</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">Endpoint</span> {
     <span class="kw">type</span> <span class="ident">Error</span> <span class="op">=</span> <span class="ident">InvalidUri</span>;
 
-    <span class="kw">fn</span> <span class="ident">try_from</span>(<span class="ident">t</span>: <span class="ident">Bytes</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="self">Self</span>::<span class="ident">Error</span><span class="op">&gt;</span> {
+    <span class="kw">fn</span> <span class="ident">try_from</span>(<span class="ident">t</span>: <span class="ident">Bytes</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="self">Self</span>::<span class="ident">Error</span><span class="op">&gt;</span> {
         <span class="self">Self</span>::<span class="ident">from_shared</span>(<span class="ident">t</span>)
     }
 }
@@ -553,7 +555,7 @@
 <span class="kw">impl</span> <span class="ident">TryFrom</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">Endpoint</span> {
     <span class="kw">type</span> <span class="ident">Error</span> <span class="op">=</span> <span class="ident">InvalidUri</span>;
 
-    <span class="kw">fn</span> <span class="ident">try_from</span>(<span class="ident">t</span>: <span class="ident">String</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="self">Self</span>::<span class="ident">Error</span><span class="op">&gt;</span> {
+    <span class="kw">fn</span> <span class="ident">try_from</span>(<span class="ident">t</span>: <span class="ident">String</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="self">Self</span>::<span class="ident">Error</span><span class="op">&gt;</span> {
         <span class="self">Self</span>::<span class="ident">from_shared</span>(<span class="ident">t</span>.<span class="ident">into_bytes</span>())
     }
 }
@@ -561,7 +563,7 @@
 <span class="kw">impl</span> <span class="ident">TryFrom</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">Endpoint</span> {
     <span class="kw">type</span> <span class="ident">Error</span> <span class="op">=</span> <span class="ident">Never</span>;
 
-    <span class="kw">fn</span> <span class="ident">try_from</span>(<span class="ident">t</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="self">Self</span>::<span class="ident">Error</span><span class="op">&gt;</span> {
+    <span class="kw">fn</span> <span class="ident">try_from</span>(<span class="ident">t</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="self">Self</span>::<span class="ident">Error</span><span class="op">&gt;</span> {
         <span class="prelude-val">Ok</span>(<span class="self">Self</span>::<span class="ident">from_static</span>(<span class="ident">t</span>))
     }
 }
@@ -570,7 +572,7 @@
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Never</span> {}
 
 <span class="kw">impl</span> <span class="ident">std</span>::<span class="ident">fmt</span>::<span class="ident">Display</span> <span class="kw">for</span> <span class="ident">Never</span> {
-    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="kw">_</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">std</span>::<span class="ident">fmt</span>::<span class="ident">Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) <span class="op">-&gt;</span> <span class="ident">std</span>::<span class="ident">fmt</span>::<span class="prelude-ty">Result</span> {
+    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="kw">_</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">std</span>::<span class="ident">fmt</span>::<span class="ident">Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">std</span>::<span class="ident">fmt</span>::<span class="prelude-ty">Result</span> {
         <span class="kw">match</span> <span class="kw-2">*</span><span class="self">self</span> {}
     }
 }
@@ -578,7 +580,7 @@
 <span class="kw">impl</span> <span class="ident">std</span>::<span class="ident">error</span>::<span class="ident">Error</span> <span class="kw">for</span> <span class="ident">Never</span> {}
 
 <span class="kw">impl</span> <span class="ident">fmt</span>::<span class="ident">Debug</span> <span class="kw">for</span> <span class="ident">Endpoint</span> {
-    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">f</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">fmt</span>::<span class="ident">Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) <span class="op">-&gt;</span> <span class="ident">fmt</span>::<span class="prelude-ty">Result</span> {
+    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">f</span>: <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">fmt</span>::<span class="ident">Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">fmt</span>::<span class="prelude-ty">Result</span> {
         <span class="ident">f</span>.<span class="ident">debug_struct</span>(<span class="string">&quot;Endpoint&quot;</span>).<span class="ident">finish</span>()
     }
 }

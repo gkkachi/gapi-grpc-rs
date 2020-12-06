@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["PurchaseOption","Purchase option for the request. Defines the purchase for which the SKUs are being listed."]],"mod":[["change_offer_purchase",""]],"struct":[["ChangeOfferPurchase","List SKUs for ChangeOffer purchase for upgrade/downgrade of an entitlement."],["CreateEntitlementPurchase","List SKUs for CreateEntitlement purchase for the customer."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["InstituteSize","Number of students/staff the institute has."],["InstituteType","Enum to specify the institute type."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["PurchaseOption","Purchase option for the request. Defines the purchase for which the Offers are being listed."]],"struct":[["ChangeOfferPurchase","List Offers for ChangeOffer purchase."],["CreateEntitlementPurchase","List Offers for CreateEntitlement purchase."]]});

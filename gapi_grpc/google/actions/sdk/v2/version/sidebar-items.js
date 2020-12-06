@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["version_state",""]],"struct":[["VersionState","Represents the current state of the version."]]});
