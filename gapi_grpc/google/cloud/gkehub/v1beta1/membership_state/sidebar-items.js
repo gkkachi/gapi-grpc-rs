@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Code","Possible states of a Membership resources."]]});
