@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["State","The state of the experiment."]],"mod":[["definition",""],["result",""]],"struct":[["Definition","Definition of the experiment. Next ID: 3"],["Result","The inference result which includes an objective metric to optimize and the confidence interval."]]});
