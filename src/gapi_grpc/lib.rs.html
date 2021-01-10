@@ -1141,6 +1141,9 @@
 <span id="1138">1138</span>
 <span id="1139">1139</span>
 <span id="1140">1140</span>
+<span id="1141">1141</span>
+<span id="1142">1142</span>
+<span id="1143">1143</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">google</span> {
@@ -1570,6 +1573,9 @@
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">gkehub</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1alpha2</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.gkehub.v1alpha2&quot;</span>);
+            }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.gkehub.v1beta1&quot;</span>);
             }
