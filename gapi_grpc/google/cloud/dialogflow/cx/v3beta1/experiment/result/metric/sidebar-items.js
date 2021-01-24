@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Value","The actual value of the metric."]]});
