@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["partial_result",""]],"struct":[["PartialResult","Represents a partial result in batch migration opreation for one [MigrateResourceRequest][google.cloud.aiplatform.v1beta1.MigrateResourceRequest]."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["DeploymentResourcesType","Identifies a type of Model's prediction resources."]],"mod":[["export_format",""]],"struct":[["ExportFormat","Represents export format supported by the Model. All formats export to Google Cloud Storage."]]});
