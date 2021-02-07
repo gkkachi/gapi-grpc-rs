@@ -111,6 +111,16 @@ methods.</p>
 </td></tr></table><h2 id="enums" class="section-header"><a href="#enums">Enums</a></h2>
 <table><tr class="module-item"><td><a class="enum" href="enum.ChangeType.html" title="gapi_grpc::google::api::ChangeType enum">ChangeType</a></td><td class="docblock-short"><p>Classifies set of possible modifications to an object in the service
 configuration.</p>
+</td></tr><tr class="module-item"><td><a class="enum" href="enum.ErrorReason.html" title="gapi_grpc::google::api::ErrorReason enum">ErrorReason</a></td><td class="docblock-short"><p>Defines the supported values for <code>google.rpc.ErrorInfo.reason</code> for the
+<code>googleapis.com</code> error domain. This error domain is reserved for <a href="https://cloud.google.com/service-infrastructure/docs/overview">Service
+Infrastructure</a>.
+For each error info of this domain, the metadata key &quot;service&quot; refers to the
+logical identifier of an API service, such as &quot;pubsub.googleapis.com&quot;. The
+&quot;consumer&quot; refers to the entity that consumes an API Service. It typically is
+a Google project that owns the client application or the server resource,
+such as &quot;projects/123&quot;. Other metadata keys are specific to each error
+reason. For more information, see the definition of the specific error
+reason.</p>
 </td></tr><tr class="module-item"><td><a class="enum" href="enum.FieldBehavior.html" title="gapi_grpc::google::api::FieldBehavior enum">FieldBehavior</a></td><td class="docblock-short"><p>An indicator of the behavior of a given field (for example, that a field
 is required in requests, or given as output but ignored as input).
 This <strong>does not</strong> change the behavior in protocol buffers itself; it only

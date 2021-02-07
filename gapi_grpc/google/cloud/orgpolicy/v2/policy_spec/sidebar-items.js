@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["policy_rule",""]],"struct":[["PolicyRule","A rule used to express this policy."]]});
