@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["Prediction","Prediction output format for Text Sentiment."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Input","Some identifier from the input so that the prediction can be mapped back to the input instance."]]});

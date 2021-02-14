@@ -1185,6 +1185,36 @@
 <span id="1182">1182</span>
 <span id="1183">1183</span>
 <span id="1184">1184</span>
+<span id="1185">1185</span>
+<span id="1186">1186</span>
+<span id="1187">1187</span>
+<span id="1188">1188</span>
+<span id="1189">1189</span>
+<span id="1190">1190</span>
+<span id="1191">1191</span>
+<span id="1192">1192</span>
+<span id="1193">1193</span>
+<span id="1194">1194</span>
+<span id="1195">1195</span>
+<span id="1196">1196</span>
+<span id="1197">1197</span>
+<span id="1198">1198</span>
+<span id="1199">1199</span>
+<span id="1200">1200</span>
+<span id="1201">1201</span>
+<span id="1202">1202</span>
+<span id="1203">1203</span>
+<span id="1204">1204</span>
+<span id="1205">1205</span>
+<span id="1206">1206</span>
+<span id="1207">1207</span>
+<span id="1208">1208</span>
+<span id="1209">1209</span>
+<span id="1210">1210</span>
+<span id="1211">1211</span>
+<span id="1212">1212</span>
+<span id="1213">1213</span>
+<span id="1214">1214</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">google</span> {
@@ -1334,6 +1364,31 @@
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta</span> {
             <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.appengine.v1beta&quot;</span>);
+        }
+    }
+    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">apps</span> {
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">script</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">r#type</span> {
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">calendar</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.apps.script.r#type.calendar&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">docs</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.apps.script.r#type.docs&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">drive</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.apps.script.r#type.drive&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">gmail</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.apps.script.r#type.gmail&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">sheets</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.apps.script.r#type.sheets&quot;</span>);
+                }
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">slides</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.apps.script.r#type.slides&quot;</span>);
+                }
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.apps.script.r#type&quot;</span>);
+            }
         }
     }
     <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">area120</span> {
@@ -1648,6 +1703,11 @@
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.gkehub.v1beta1&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">gsuiteaddons</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.gsuiteaddons.v1&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">iot</span> {

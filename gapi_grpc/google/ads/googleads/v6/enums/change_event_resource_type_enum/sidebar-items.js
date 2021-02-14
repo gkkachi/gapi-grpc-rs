@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["ChangeEventResourceType","Enum listing the resource types support by the ChangeEvent resource. Next Id: 9"]]});
+initSidebarItems({"enum":[["ChangeEventResourceType","Enum listing the resource types support by the ChangeEvent resource."]]});
