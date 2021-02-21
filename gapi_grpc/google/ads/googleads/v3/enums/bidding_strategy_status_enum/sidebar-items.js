@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["BiddingStrategyStatus","The possible statuses of a BiddingStrategy."]]});

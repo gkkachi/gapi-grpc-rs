@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["MimeType","The mime type"]]});

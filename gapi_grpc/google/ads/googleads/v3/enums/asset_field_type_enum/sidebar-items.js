@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AssetFieldType","Enum describing the possible placements of an asset."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["MerchantCenterLinkServiceClient","This service allows management of links between Google Ads and Google Merchant Center."]]});

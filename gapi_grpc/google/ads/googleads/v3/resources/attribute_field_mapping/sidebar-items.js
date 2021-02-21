@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Field","Placeholder or criterion field to be populated using data from the above feed attribute. Required."]]});

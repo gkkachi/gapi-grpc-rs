@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["DistinctError","Enum describing possible distinct errors."]]});

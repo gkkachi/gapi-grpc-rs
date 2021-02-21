@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CustomerExtensionSettingServiceClient","Service to manage customer extension settings."]]});

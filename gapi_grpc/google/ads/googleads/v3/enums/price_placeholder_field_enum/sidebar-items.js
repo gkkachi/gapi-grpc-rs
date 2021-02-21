@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["PricePlaceholderField","Possible values for Price placeholder fields."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Image","The image to create the ImageAd from. This can be specified in one of two ways."]]});

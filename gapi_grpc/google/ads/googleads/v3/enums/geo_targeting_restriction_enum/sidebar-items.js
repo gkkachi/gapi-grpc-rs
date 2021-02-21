@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["GeoTargetingRestriction","A restriction used to determine if the request context's geo should be matched."]]});

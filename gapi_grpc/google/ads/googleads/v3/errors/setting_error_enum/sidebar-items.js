@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["SettingError","Enum describing possible setting errors."]]});

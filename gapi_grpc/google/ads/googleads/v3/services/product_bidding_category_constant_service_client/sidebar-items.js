@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ProductBiddingCategoryConstantServiceClient","Service to fetch Product Bidding Categories."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["PointList","List of simulation points."]]});

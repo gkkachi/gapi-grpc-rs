@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AdGroupAdStatus","The possible statuses of an AdGroupAd."]]});

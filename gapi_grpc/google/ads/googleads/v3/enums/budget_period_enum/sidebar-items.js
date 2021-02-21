@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["BudgetPeriod","Possible period of a Budget."]]});

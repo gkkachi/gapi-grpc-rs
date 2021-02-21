@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AccountBudgetProposalStatus","The possible statuses of an AccountBudgetProposal."]]});

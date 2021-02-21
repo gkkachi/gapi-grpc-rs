@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["GeoTargetingType","The possible geo targeting types."]]});

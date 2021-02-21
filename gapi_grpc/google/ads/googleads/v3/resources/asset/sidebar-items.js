@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AssetData","The specific type of the asset."]]});

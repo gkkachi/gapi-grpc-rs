@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Device","Enumerates Google Ads devices available for targeting."]]});

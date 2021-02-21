@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["CampaignSharedSetStatus","Enum listing the possible campaign shared set statuses."]]});

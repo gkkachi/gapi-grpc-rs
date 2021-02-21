@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["DynamicSearchAdsSearchTermViewServiceClient","Service to fetch dynamic search ads views."]]});

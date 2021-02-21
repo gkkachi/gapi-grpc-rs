@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ClickViewServiceClient","Service to fetch click views."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["SearchTermViewServiceClient","Service to manage search term views."]]});

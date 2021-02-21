@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["FeedItemTargetStatus","Possible statuses of a feed item target."]]});

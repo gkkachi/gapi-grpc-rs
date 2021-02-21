@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["HotelPlaceholderField","Possible values for Hotel placeholder fields."]]});

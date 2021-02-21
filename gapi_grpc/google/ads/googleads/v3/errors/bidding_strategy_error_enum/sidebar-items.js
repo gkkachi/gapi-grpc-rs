@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["BiddingStrategyError","Enum describing possible bidding strategy errors."]]});

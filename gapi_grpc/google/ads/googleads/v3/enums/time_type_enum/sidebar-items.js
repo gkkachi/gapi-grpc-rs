@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["TimeType","The possible time types used by certain resources as an alternative to absolute timestamps."]]});

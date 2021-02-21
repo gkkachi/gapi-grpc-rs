@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["UserInterestTaxonomyType","Enum containing the possible UserInterestTaxonomyTypes."]]});

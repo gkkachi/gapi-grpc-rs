@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["SizeLimitError","Enum describing possible size limit errors."]]});

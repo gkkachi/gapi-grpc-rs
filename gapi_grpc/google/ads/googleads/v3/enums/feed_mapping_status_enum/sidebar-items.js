@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["FeedMappingStatus","Possible statuses of a feed mapping."]]});

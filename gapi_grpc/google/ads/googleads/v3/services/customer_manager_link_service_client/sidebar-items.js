@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CustomerManagerLinkServiceClient","Service to manage customer-manager links."]]});

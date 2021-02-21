@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["DatabaseError","Enum describing possible database errors."]]});

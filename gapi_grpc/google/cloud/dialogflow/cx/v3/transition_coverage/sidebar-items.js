@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["transition",""],["transition_node",""]],"struct":[["Transition","A transition in the agent's graph."],["TransitionNode","The source or target of a transition."]]});
+initSidebarItems({"mod":[["transition",""],["transition_node",""]],"struct":[["Transition","A transition in a page."],["TransitionNode","The source or target of a transition."]]});

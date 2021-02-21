@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `/home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/tower-retry-0.3.0/src/budget.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>budget.rs - source</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled ><script id="default-settings"></script><script src="../../storage.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="icon" type="image/svg+xml" href="../../favicon.svg">
 <link rel="alternate icon" type="image/png" href="../../favicon-16x16.png">
-<link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><style type="text/css">#crate-search{background-image:url("../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../tower_retry/index.html'><div class='logo-container rust-logo'><img src='../../rust-logo.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!" aria-haspopup="menu"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices" role="menu"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><span class="help-button">?</span>
+<link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><style type="text/css">#crate-search{background-image:url("../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../tower_retry/index.html'><div class='logo-container rust-logo'><img src='../../rust-logo.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!" aria-haspopup="menu"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices" role="menu"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><button type="button" class="help-button">?</button>
                 <a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><pre class="line-numbers"><span id="1">  1</span>
 <span id="2">  2</span>
 <span id="3">  3</span>
@@ -500,35 +500,35 @@
     }
 
     <span class="attribute">#[<span class="ident">tokio</span>::<span class="ident">test</span>]</span>
-    <span class="ident">async</span> <span class="kw">fn</span> <span class="ident">leaky</span>() {
+    <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">leaky</span>() {
         <span class="ident">time</span>::<span class="ident">pause</span>();
 
         <span class="kw">let</span> <span class="ident">bgt</span> <span class="op">=</span> <span class="ident">Budget</span>::<span class="ident">new</span>(<span class="ident">Duration</span>::<span class="ident">from_secs</span>(<span class="number">1</span>), <span class="number">0</span>, <span class="number">1.0</span>);
         <span class="ident">bgt</span>.<span class="ident">deposit</span>();
 
-        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_secs</span>(<span class="number">3</span>)).<span class="ident">await</span>;
+        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_secs</span>(<span class="number">3</span>)).<span class="kw">await</span>;
 
         <span class="ident">bgt</span>.<span class="ident">withdraw</span>().<span class="ident">unwrap_err</span>();
     }
 
     <span class="attribute">#[<span class="ident">tokio</span>::<span class="ident">test</span>]</span>
-    <span class="ident">async</span> <span class="kw">fn</span> <span class="ident">slots</span>() {
+    <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">slots</span>() {
         <span class="ident">time</span>::<span class="ident">pause</span>();
 
         <span class="kw">let</span> <span class="ident">bgt</span> <span class="op">=</span> <span class="ident">Budget</span>::<span class="ident">new</span>(<span class="ident">Duration</span>::<span class="ident">from_secs</span>(<span class="number">1</span>), <span class="number">0</span>, <span class="number">0.5</span>);
         <span class="ident">bgt</span>.<span class="ident">deposit</span>();
         <span class="ident">bgt</span>.<span class="ident">deposit</span>();
-        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_millis</span>(<span class="number">901</span>)).<span class="ident">await</span>;
+        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_millis</span>(<span class="number">901</span>)).<span class="kw">await</span>;
         <span class="comment">// 900ms later, the deposit should still be valid</span>
         <span class="ident">bgt</span>.<span class="ident">withdraw</span>().<span class="ident">unwrap</span>();
 
         <span class="comment">// blank slate</span>
-        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_millis</span>(<span class="number">2001</span>)).<span class="ident">await</span>;
+        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_millis</span>(<span class="number">2001</span>)).<span class="kw">await</span>;
 
         <span class="ident">bgt</span>.<span class="ident">deposit</span>();
-        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_millis</span>(<span class="number">301</span>)).<span class="ident">await</span>;
+        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_millis</span>(<span class="number">301</span>)).<span class="kw">await</span>;
         <span class="ident">bgt</span>.<span class="ident">deposit</span>();
-        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_millis</span>(<span class="number">801</span>)).<span class="ident">await</span>;
+        <span class="ident">time</span>::<span class="ident">advance</span>(<span class="ident">Duration</span>::<span class="ident">from_millis</span>(<span class="number">801</span>)).<span class="kw">await</span>;
         <span class="ident">bgt</span>.<span class="ident">deposit</span>();
 
         <span class="comment">// the first deposit is expired, but the 2nd should still be valid,</span>
@@ -537,7 +537,7 @@
     }
 
     <span class="attribute">#[<span class="ident">tokio</span>::<span class="ident">test</span>]</span>
-    <span class="ident">async</span> <span class="kw">fn</span> <span class="ident">reserve</span>() {
+    <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">reserve</span>() {
         <span class="kw">let</span> <span class="ident">bgt</span> <span class="op">=</span> <span class="ident">Budget</span>::<span class="ident">new</span>(<span class="ident">Duration</span>::<span class="ident">from_secs</span>(<span class="number">1</span>), <span class="number">5</span>, <span class="number">1.0</span>);
         <span class="ident">bgt</span>.<span class="ident">withdraw</span>().<span class="ident">unwrap</span>();
         <span class="ident">bgt</span>.<span class="ident">withdraw</span>().<span class="ident">unwrap</span>();

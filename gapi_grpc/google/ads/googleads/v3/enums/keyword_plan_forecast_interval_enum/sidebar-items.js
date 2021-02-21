@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["KeywordPlanForecastInterval","Forecast intervals."]]});

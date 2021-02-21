@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["RequestError","Enum describing possible request errors."]]});

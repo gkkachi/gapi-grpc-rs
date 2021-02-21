@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["InvoiceType","The possible type of invoices."]]});

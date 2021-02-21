@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["PaymentsAccountError","Enum describing possible errors in payments account service."]]});

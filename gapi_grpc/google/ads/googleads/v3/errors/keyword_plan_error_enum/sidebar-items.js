@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["KeywordPlanError","Enum describing possible errors from applying a keyword plan."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["CustomInterestMemberType","Enum containing possible custom interest member types."]]});

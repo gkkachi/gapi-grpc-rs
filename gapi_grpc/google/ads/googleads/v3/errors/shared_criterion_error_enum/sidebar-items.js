@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["SharedCriterionError","Enum describing possible shared criterion errors."]]});

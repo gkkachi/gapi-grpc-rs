@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["LabelStatus","Possible statuses of a label."]]});

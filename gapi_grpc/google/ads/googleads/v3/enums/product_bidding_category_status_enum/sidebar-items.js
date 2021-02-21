@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["ProductBiddingCategoryStatus","Enum describing the status of the product bidding category."]]});

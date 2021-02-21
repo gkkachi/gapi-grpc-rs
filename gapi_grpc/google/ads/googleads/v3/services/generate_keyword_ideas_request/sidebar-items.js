@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Seed","The type of seed to generate keyword ideas."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AssetLinkError","Enum describing possible asset link errors."]]});

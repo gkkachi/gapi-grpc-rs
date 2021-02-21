@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AffiliateLocationPlaceholderField","Possible values for Affiliate Location placeholder fields."]]});

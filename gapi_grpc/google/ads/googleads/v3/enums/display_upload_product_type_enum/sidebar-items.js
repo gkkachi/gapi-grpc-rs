@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["DisplayUploadProductType","Enumerates display upload product types."]]});

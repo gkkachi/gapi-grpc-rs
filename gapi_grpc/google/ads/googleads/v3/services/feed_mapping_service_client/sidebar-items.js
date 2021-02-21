@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["FeedMappingServiceClient","Service to manage feed mappings."]]});

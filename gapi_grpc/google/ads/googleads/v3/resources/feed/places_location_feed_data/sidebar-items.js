@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["OAuthInfo","Data used for authorization using OAuth."]]});

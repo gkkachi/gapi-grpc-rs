@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["ExtensionFeedItemServiceClient","Service to manage extension feed items."]]});

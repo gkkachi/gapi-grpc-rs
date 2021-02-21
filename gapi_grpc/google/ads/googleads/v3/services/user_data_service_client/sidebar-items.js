@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["UserDataServiceClient","Service to manage user data uploads. Accessible only to customers on the allow-list."]]});

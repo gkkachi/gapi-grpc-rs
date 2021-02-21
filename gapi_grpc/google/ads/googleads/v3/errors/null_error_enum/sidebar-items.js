@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["NullError","Enum describing possible null errors."]]});

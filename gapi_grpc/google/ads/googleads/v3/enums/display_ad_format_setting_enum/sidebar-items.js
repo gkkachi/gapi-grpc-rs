@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["DisplayAdFormatSetting","Enumerates display ad format settings."]]});

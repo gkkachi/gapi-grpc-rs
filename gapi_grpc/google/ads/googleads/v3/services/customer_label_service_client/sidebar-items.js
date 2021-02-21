@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CustomerLabelServiceClient","Service to manage labels on customers."]]});

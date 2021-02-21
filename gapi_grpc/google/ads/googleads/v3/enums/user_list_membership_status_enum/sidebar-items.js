@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["UserListMembershipStatus","Enum containing possible user list membership statuses."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["CampaignCriterionStatus","The possible statuses of a CampaignCriterion."]]});

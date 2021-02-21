@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AccessRole","Possible access role of a user."]]});

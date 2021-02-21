@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["CampaignExperimentStatus","Possible statuses of a campaign experiment."]]});

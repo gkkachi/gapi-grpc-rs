@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CampaignSharedSetServiceClient","Service to manage campaign shared sets."]]});

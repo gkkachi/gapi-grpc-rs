@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["AdGroupBidModifierError","Enum describing possible ad group bid modifier errors."]]});

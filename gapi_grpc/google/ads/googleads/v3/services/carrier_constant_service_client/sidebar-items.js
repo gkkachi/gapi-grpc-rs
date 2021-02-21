@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CarrierConstantServiceClient","Service to fetch carrier constants."]]});

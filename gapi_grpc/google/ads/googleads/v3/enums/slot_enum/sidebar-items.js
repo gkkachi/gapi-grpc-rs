@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Slot","Enumerates possible positions of the Ad."]]});

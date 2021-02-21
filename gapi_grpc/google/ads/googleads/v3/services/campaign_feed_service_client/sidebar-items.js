@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CampaignFeedServiceClient","Service to manage campaign feeds."]]});

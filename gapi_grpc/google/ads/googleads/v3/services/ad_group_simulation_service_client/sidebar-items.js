@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["AdGroupSimulationServiceClient","Service to fetch ad group simulations."]]});
