@@ -1201,8 +1201,39 @@
 <span id="1198">1198</span>
 <span id="1199">1199</span>
 <span id="1200">1200</span>
+<span id="1201">1201</span>
+<span id="1202">1202</span>
+<span id="1203">1203</span>
+<span id="1204">1204</span>
+<span id="1205">1205</span>
+<span id="1206">1206</span>
+<span id="1207">1207</span>
+<span id="1208">1208</span>
+<span id="1209">1209</span>
+<span id="1210">1210</span>
+<span id="1211">1211</span>
+<span id="1212">1212</span>
+<span id="1213">1213</span>
+<span id="1214">1214</span>
+<span id="1215">1215</span>
+<span id="1216">1216</span>
+<span id="1217">1217</span>
+<span id="1218">1218</span>
+<span id="1219">1219</span>
+<span id="1220">1220</span>
+<span id="1221">1221</span>
+<span id="1222">1222</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ccc</span> {
+    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">hosted</span> {
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">marketplace</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v2</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;ccc.hosted.marketplace.v2&quot;</span>);
+            }
+        }
+    }
+}
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">google</span> {
     <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">actions</span> {
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">r#type</span> {
@@ -1503,6 +1534,9 @@
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1p5beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.asset.v1p5beta1&quot;</span>);
+            }
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1p7beta1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.asset.v1p7beta1&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">assuredworkloads</span> {
@@ -1850,6 +1884,11 @@
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.resourcemanager.v2&quot;</span>);
             }
         }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">resourcesettings</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.resourcesettings.v1&quot;</span>);
+            }
+        }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">retail</span> {
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v2</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.retail.v2&quot;</span>);
@@ -1922,6 +1961,11 @@
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.servicedirectory.v1beta1&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">shell</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.shell.v1&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">speech</span> {
