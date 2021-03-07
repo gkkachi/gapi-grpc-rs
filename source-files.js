@@ -2,7 +2,7 @@ var N = null;var sourcesIndex = {};
 sourcesIndex["anyhow"] = {"name":"","files":["backtrace.rs","chain.rs","context.rs","error.rs","fmt.rs","kind.rs","lib.rs","macros.rs","ptr.rs","wrapper.rs"]};
 sourcesIndex["async_stream"] = {"name":"","files":["async_stream.rs","lib.rs","next.rs","yielder.rs"]};
 sourcesIndex["async_stream_impl"] = {"name":"","files":["lib.rs"]};
-sourcesIndex["async_trait"] = {"name":"","files":["args.rs","expand.rs","lib.rs","lifetime.rs","parse.rs","receiver.rs","respan.rs"]};
+sourcesIndex["async_trait"] = {"name":"","files":["args.rs","expand.rs","lib.rs","lifetime.rs","parse.rs","receiver.rs"]};
 sourcesIndex["base64"] = {"name":"","dirs":[{"name":"write","files":["encoder.rs","mod.rs"]}],"files":["chunked_encoder.rs","decode.rs","display.rs","encode.rs","lib.rs","tables.rs"]};
 sourcesIndex["bytes"] = {"name":"","dirs":[{"name":"buf","files":["buf_impl.rs","buf_mut.rs","chain.rs","iter.rs","limit.rs","mod.rs","reader.rs","take.rs","uninit_slice.rs","vec_deque.rs","writer.rs"]},{"name":"fmt","files":["debug.rs","hex.rs","mod.rs"]}],"files":["bytes.rs","bytes_mut.rs","lib.rs","loom.rs"]};
 sourcesIndex["cfg_if"] = {"name":"","files":["lib.rs"]};

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Type","The type of changed comment."]],"mod":[["assignment",""],["post",""],["suggestion",""]],"struct":[["Assignment","A comment with an assignment."],["Post","A regular posted comment."],["Suggestion","A suggestion."]]});
