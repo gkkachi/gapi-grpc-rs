@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Agent","Required. The agent to restore."]]});
+initSidebarItems({"enum":[["Agent","Required. The agent to restore."],["RestoreOption","Restore option."]]});
