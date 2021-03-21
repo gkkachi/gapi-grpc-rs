@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Scaling","Controls how instances are created."]]});
+initSidebarItems({"enum":[["Scaling","Controls how instances are created, scaled, and reaped."]]});

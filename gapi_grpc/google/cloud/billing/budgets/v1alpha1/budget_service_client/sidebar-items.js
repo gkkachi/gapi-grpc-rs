@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["BudgetServiceClient","BudgetService stores Cloud Billing budgets, which define a budget plan and rules to execute as we track spend against that plan."]]});

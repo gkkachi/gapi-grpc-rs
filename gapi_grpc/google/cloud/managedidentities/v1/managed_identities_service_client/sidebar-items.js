@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["ManagedIdentitiesServiceClient","API OverviewThe `managedidentites.googleapis.com` service implements the Google Cloud Managed Identites API for identity services (e.g. Microsoft Active Directory)."]]});
+initSidebarItems({"struct":[["ManagedIdentitiesServiceClient","API Overview"]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["CustomHeaders","Custom SIP headers. See the description of headers in the RFC."]]});

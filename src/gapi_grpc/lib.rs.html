@@ -1236,6 +1236,18 @@
 <span id="1233">1233</span>
 <span id="1234">1234</span>
 <span id="1235">1235</span>
+<span id="1236">1236</span>
+<span id="1237">1237</span>
+<span id="1238">1238</span>
+<span id="1239">1239</span>
+<span id="1240">1240</span>
+<span id="1241">1241</span>
+<span id="1242">1242</span>
+<span id="1243">1243</span>
+<span id="1244">1244</span>
+<span id="1245">1245</span>
+<span id="1246">1246</span>
+<span id="1247">1247</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ccc</span> {
@@ -1625,9 +1637,6 @@
                 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
                     <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.billing.budgets.v1&quot;</span>);
                 }
-                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1alpha1</span> {
-                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.billing.budgets.v1alpha1&quot;</span>);
-                }
                 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
                     <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.billing.budgets.v1beta1&quot;</span>);
                 }
@@ -1644,6 +1653,16 @@
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">channel</span> {
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.channel.v1&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">clouddms</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">logging</span> {
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.clouddms.logging.v1&quot;</span>);
+                }
+            }
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.clouddms.v1&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">datacatalog</span> {
@@ -2084,6 +2103,11 @@
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1p4beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.vision.v1p4beta1&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">vpcaccess</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.vpcaccess.v1&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">webrisk</span> {
