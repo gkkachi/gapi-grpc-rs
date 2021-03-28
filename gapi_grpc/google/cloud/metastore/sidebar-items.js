@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["logging",""],["v1alpha",""],["v1beta",""]]});
+initSidebarItems({"mod":[["logging",""],["v1",""],["v1alpha",""],["v1beta",""]]});
