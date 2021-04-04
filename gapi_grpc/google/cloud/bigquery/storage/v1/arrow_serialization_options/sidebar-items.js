@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CompressionCodec","Compression codec's supported by Arrow."]]});
