@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["TransferredCustomerIdentity","Specifies the identity of transferred customer. Either a cloud_identity_id of the customer OR the customer name is required to look up transferable SKUs."]]});
+initSidebarItems({"enum":[["TransferredCustomerIdentity","Specifies the identity of transferred customer. Either a cloud_identity_id of the customer or the customer name is required to look up transferable SKUs."]]});

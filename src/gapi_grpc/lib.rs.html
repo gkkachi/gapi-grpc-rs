@@ -1267,6 +1267,16 @@
 <span id="1264">1264</span>
 <span id="1265">1265</span>
 <span id="1266">1266</span>
+<span id="1267">1267</span>
+<span id="1268">1268</span>
+<span id="1269">1269</span>
+<span id="1270">1270</span>
+<span id="1271">1271</span>
+<span id="1272">1272</span>
+<span id="1273">1273</span>
+<span id="1274">1274</span>
+<span id="1275">1275</span>
+<span id="1276">1276</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ccc</span> {
@@ -1393,6 +1403,11 @@
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">servicemanagement</span> {
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.api.servicemanagement.v1&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">serviceusage</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.api.serviceusage.v1&quot;</span>);
             }
         }
         <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.api&quot;</span>);
@@ -2092,6 +2107,11 @@
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.texttospeech.v1beta1&quot;</span>);
+            }
+        }
+        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">tpu</span> {
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.tpu.v1&quot;</span>);
             }
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">translation</span> {
