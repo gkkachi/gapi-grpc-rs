@@ -1,1 +1,0 @@
-initSidebarItems({"mod":[["chunk",""]],"struct":[["Chunk","Specifies a piece of a row's contents returned as part of the read response stream."]]});

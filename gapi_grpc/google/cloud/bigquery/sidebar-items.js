@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["connection",""],["datatransfer",""],["logging",""],["reservation",""],["storage",""],["v2",""]]});
+initSidebarItems({"mod":[["connection",""],["datatransfer",""],["logging",""],["migration",""],["reservation",""],["storage",""],["v2",""]]});

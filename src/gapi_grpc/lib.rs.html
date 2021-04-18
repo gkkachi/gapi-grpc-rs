@@ -1272,11 +1272,6 @@
 <span id="1269">1269</span>
 <span id="1270">1270</span>
 <span id="1271">1271</span>
-<span id="1272">1272</span>
-<span id="1273">1273</span>
-<span id="1274">1274</span>
-<span id="1275">1275</span>
-<span id="1276">1276</span>
 </pre><div class="example-wrap"><pre class="rust ">
 
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ccc</span> {
@@ -1409,6 +1404,9 @@
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.api.serviceusage.v1&quot;</span>);
             }
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1beta1</span> {
+                <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.api.serviceusage.v1beta1&quot;</span>);
+            }
         }
         <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.api&quot;</span>);
     }
@@ -1479,22 +1477,9 @@
     }
     <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">bigtable</span> {
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">admin</span> {
-            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">cluster</span> {
-                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
-                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.bigtable.admin.cluster.v1&quot;</span>);
-                }
-            }
-            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">table</span> {
-                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
-                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.bigtable.admin.table.v1&quot;</span>);
-                }
-            }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v2</span> {
                 <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.bigtable.admin.v2&quot;</span>);
             }
-        }
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
-            <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.bigtable.v1&quot;</span>);
         }
         <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v2</span> {
             <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.bigtable.v2&quot;</span>);
@@ -1643,6 +1628,11 @@
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">logging</span> {
                 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v1</span> {
                     <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.bigquery.logging.v1&quot;</span>);
+                }
+            }
+            <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">migration</span> {
+                <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">v2alpha</span> {
+                    <span class="ident">tonic</span>::<span class="macro">include_proto</span><span class="macro">!</span>(<span class="string">&quot;google.cloud.bigquery.migration.v2alpha&quot;</span>);
                 }
             }
             <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">reservation</span> {

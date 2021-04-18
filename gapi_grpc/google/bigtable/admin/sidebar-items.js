@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["cluster",""],["table",""],["v2",""]]});
+initSidebarItems({"mod":[["v2",""]]});

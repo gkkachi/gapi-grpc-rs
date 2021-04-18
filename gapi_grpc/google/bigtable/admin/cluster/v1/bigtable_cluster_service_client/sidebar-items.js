@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["BigtableClusterServiceClient","Service for managing zonal Cloud Bigtable resources."]]});
