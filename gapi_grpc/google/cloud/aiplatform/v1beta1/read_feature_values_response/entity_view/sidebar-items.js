@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["data",""]],"struct":[["Data","Container to hold value(s), successive in time, for one Feature from the request."]]});

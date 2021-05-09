@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["training_dataset",""]],"struct":[["PredictionDriftDetectionConfig","The config for Prediction data drift detection."],["TrainingDataset","Training Dataset information."],["TrainingPredictionSkewDetectionConfig","The config for Training & Prediction data skew detection. It specifies the training dataset sources and the skew detection parameters."]]});

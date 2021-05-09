@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["IndexEndpointServiceClient","A service for managing AI Platform's IndexEndpoints."]]});
