@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["CustomerClientServiceClient","Service to get clients in a customer's hierarchy."]]});
+initSidebarItems({"struct":[["CustomerClientServiceClient","Service to get clients in a customer’s hierarchy."]]});

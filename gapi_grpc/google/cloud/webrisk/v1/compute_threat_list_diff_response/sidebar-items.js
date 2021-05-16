@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["ResponseType","The type of response sent to the client."]],"struct":[["Checksum","The expected state of a client's local database."]]});
+initSidebarItems({"enum":[["ResponseType","The type of response sent to the client."]],"struct":[["Checksum","The expected state of a client’s local database."]]});

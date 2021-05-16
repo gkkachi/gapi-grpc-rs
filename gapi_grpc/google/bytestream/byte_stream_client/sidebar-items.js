@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["ByteStreamClient","IntroductionThe Byte Stream API enables a client to read and write a stream of bytes to and from a resource. Resources have names, and these names are supplied in the API calls below to identify the resource that is being read from or written to."]]});
+initSidebarItems({"struct":[["ByteStreamClient","Introduction"]]});

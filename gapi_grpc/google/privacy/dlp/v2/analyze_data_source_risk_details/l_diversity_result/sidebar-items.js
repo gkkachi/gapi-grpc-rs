@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["LDiversityEquivalenceClass","The set of columns' values that share the same ldiversity value."],["LDiversityHistogramBucket","Histogram of l-diversity equivalence class sensitive value frequencies."]]});
+initSidebarItems({"struct":[["LDiversityEquivalenceClass","The set of columns’ values that share the same ldiversity value."],["LDiversityHistogramBucket","Histogram of l-diversity equivalence class sensitive value frequencies."]]});

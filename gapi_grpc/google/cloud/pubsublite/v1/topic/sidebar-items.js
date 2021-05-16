@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["partition_config",""]],"struct":[["PartitionConfig","The settings for a topic's partitions."],["RetentionConfig","The settings for a topic's message retention."]]});
+initSidebarItems({"mod":[["partition_config",""]],"struct":[["PartitionConfig","The settings for a topic’s partitions."],["RetentionConfig","The settings for a topic’s message retention."]]});

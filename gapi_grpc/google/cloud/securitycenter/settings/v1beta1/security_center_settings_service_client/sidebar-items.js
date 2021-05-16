@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["SecurityCenterSettingsServiceClient","API OverviewThe SecurityCenterSettingsService is a sub-api of `securitycenter.googleapis.com`. The service provides methods to manage Security Center Settings, and Component Settings for GCP organizations, folders, projects, and clusters."]]});
+initSidebarItems({"struct":[["SecurityCenterSettingsServiceClient","API Overview"]]});

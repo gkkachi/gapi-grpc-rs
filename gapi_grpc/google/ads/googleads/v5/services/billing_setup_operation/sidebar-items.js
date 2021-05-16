@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Operation","Only one of these operations can be set. \"Update\" operations are not supported."]]});
+initSidebarItems({"enum":[["Operation","Only one of these operations can be set. “Update” operations are not supported."]]});

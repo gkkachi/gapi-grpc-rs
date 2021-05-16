@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["Intent","The agent's intent."]]});
+initSidebarItems({"struct":[["Intent","The agent’s intent."]]});

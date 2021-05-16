@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["drive",""],["script",""]]});
+initSidebarItems({"mod":[["alertcenter",""],["drive",""],["script",""]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["CombinedAudienceServiceClient","Service to manage combined audiences. This service can be used to list all your combined audiences with metadata, but won't show the structure and components of the combined audience."]]});
+initSidebarItems({"struct":[["CombinedAudienceServiceClient","Service to manage combined audiences. This service can be used to list all your combined audiences with metadata, but won’t show the structure and components of the combined audience."]]});

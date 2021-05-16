@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["MonthOfYear","Enumerates months of the year, e.g., \"January\"."]]});
+initSidebarItems({"enum":[["MonthOfYear","Enumerates months of the year, e.g., “January”."]]});

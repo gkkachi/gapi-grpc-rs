@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["export_data_output_info",""]],"struct":[["ExportDataOutputInfo","Further describes this export data's output. Supplements [OutputConfig][google.cloud.automl.v1beta1.OutputConfig]."]]});
+initSidebarItems({"mod":[["export_data_output_info",""]],"struct":[["ExportDataOutputInfo","Further describes this export data’s output. Supplements [OutputConfig][google.cloud.automl.v1beta1.OutputConfig]."]]});

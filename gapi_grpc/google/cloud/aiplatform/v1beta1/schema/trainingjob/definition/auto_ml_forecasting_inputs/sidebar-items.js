@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["transformation",""]],"struct":[["Granularity","A duration of time expressed in time granularity units."],["Transformation",""]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Channel","Possible values for 'channel'."]]});
+initSidebarItems({"enum":[["Channel","Possible values for ‘channel’."]]});

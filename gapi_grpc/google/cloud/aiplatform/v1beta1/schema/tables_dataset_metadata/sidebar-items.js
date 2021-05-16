@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["input_config",""]],"struct":[["BigQuerySource",""],["GcsSource",""],["InputConfig","The tables Dataset's data source. The Dataset doesn't store the data directly, but only pointer(s) to its data."]]});
+initSidebarItems({"mod":[["input_config",""]],"struct":[["BigQuerySource",""],["GcsSource",""],["InputConfig","The tables Dataset’s data source. The Dataset doesn’t store the data directly, but only pointer(s) to its data."]]});

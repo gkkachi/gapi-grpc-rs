@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["IamPolicyClient","API OverviewManages Identity and Access Management (IAM) policies."]]});
+initSidebarItems({"struct":[["IamPolicyClient","API Overview"]]});

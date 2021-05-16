@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["fallback_info",""]],"struct":[["FallbackInfo","Encapsulates fallback info for ComputeCustomRoutes. ComputeCustomRoutes performs two types of fallbacks:"]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["agentendpoint",""],["v1",""],["v1beta",""]]});
+initSidebarItems({"mod":[["agentendpoint",""],["v1",""],["v1alpha",""],["v1beta",""]]});

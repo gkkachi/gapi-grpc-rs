@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["AuthGrantType","The OAuth2 grant type Google uses to guide the user to sign in to your App's web service."],["LinkingType","The type of Account Linking to perform."]]});
+initSidebarItems({"enum":[["AuthGrantType","The OAuth2 grant type Google uses to guide the user to sign in to your App’s web service."],["LinkingType","The type of Account Linking to perform."]]});
