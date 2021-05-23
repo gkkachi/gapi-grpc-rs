@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["ParameterType","The type of the intent parameter."]]});
+initSidebarItems({"enum":[["ParameterType","The type of the intent parameter."]],"mod":[["entity_set_references",""]],"struct":[["EntitySetReferences","Entity set references for an intent parameter."]]});

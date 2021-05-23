@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["VizierServiceClient","Cloud AI Platform Vizier API."]]});
+initSidebarItems({"struct":[["VizierServiceClient","Vertex Vizier API."]]});

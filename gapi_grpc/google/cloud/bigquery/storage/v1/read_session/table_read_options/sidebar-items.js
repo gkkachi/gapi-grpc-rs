@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["OutputFormatSerializationOptions","Optional. Options specific to the Apache Arrow output format."]]});
+initSidebarItems({"enum":[["OutputFormatSerializationOptions",""]]});

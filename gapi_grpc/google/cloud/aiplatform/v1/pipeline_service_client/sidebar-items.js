@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["PipelineServiceClient","A service for creating and managing AI Platform’s pipelines."]]});
+initSidebarItems({"struct":[["PipelineServiceClient","A service for creating and managing Vertex AI’s pipelines. This includes both `TrainingPipeline` resources (used for AutoML and custom training) and `PipelineJob` resources (used for Vertex Pipelines)."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["ModelServiceClient","A service for managing AI Platform’s machine learning Models."]]});
+initSidebarItems({"struct":[["ModelServiceClient","A service for managing Vertex AI’s machine learning Models."]]});

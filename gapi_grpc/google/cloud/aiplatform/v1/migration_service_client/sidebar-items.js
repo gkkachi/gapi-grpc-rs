@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["MigrationServiceClient","A service that migrates resources from automl.googleapis.com, datalabeling.googleapis.com and ml.googleapis.com to AI Platform."]]});
+initSidebarItems({"struct":[["MigrationServiceClient","A service that migrates resources from automl.googleapis.com, datalabeling.googleapis.com and ml.googleapis.com to Vertex AI."]]});

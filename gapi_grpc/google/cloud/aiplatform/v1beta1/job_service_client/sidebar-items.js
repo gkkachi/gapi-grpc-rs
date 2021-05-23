@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["JobServiceClient","A service for creating and managing AI Platform’s jobs."]]});
+initSidebarItems({"struct":[["JobServiceClient","A service for creating and managing Vertex AI’s jobs."]]});

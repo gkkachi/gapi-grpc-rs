@@ -33,7 +33,7 @@ the whole part of the DataItem.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.AnnotationSpec.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::AnnotationSpec struct">AnnotationSpec</a></td><td class="docblock-short"><p>Identifies a concept with which DataItems may be annotated with.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.Artifact.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::Artifact struct">Artifact</a></td><td class="docblock-short"><p>Instance of a general artifact.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.Attribution.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::Attribution struct">Attribution</a></td><td class="docblock-short"><p>Attribution that explains a particular prediction output.</p>
-</td></tr><tr class="module-item"><td><a class="struct" href="struct.AutomaticResources.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::AutomaticResources struct">AutomaticResources</a></td><td class="docblock-short"><p>A description of resources that to large degree are decided by AI Platform,
+</td></tr><tr class="module-item"><td><a class="struct" href="struct.AutomaticResources.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::AutomaticResources struct">AutomaticResources</a></td><td class="docblock-short"><p>A description of resources that to large degree are decided by Vertex AI,
 and require only a modest additional configuration.
 Each Model supporting these resources documents its specific guidelines.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.AutoscalingMetricSpec.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::AutoscalingMetricSpec struct">AutoscalingMetricSpec</a></td><td class="docblock-short"><p>The metric specification that defines the target resource utilization
@@ -218,7 +218,7 @@ prediction datasets by time window. If the Dataset is not defined by time
 window, start_time = end_time. Timestamp of the stats and anomalies always
 refers to end_time. Raw stats and anomalies are stored in stats_uri or
 anomaly_uri in the tensorflow defined protos. Field data_stats contains
-almost identical information with the raw stats in AI Platform
+almost identical information with the raw stats in Vertex AI
 defined proto, for UI to display.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.FeatureValue.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::FeatureValue struct">FeatureValue</a></td><td class="docblock-short"><p>Value for a feature.
 NEXT ID: 15</p>
@@ -235,7 +235,7 @@ set as ‘-’ (the minus sign).</p>
 given fractions. Any of <code>training_fraction</code>, <code>validation_fraction</code> and
 <code>test_fraction</code> may optionally be provided, they must sum to up to 1. If the
 provided ones sum to less than 1, the remainder is assigned to sets as
-decided by AI Platform. If none of the fractions are set, by default roughly
+decided by Vertex AI. If none of the fractions are set, by default roughly
 80% of data is used for training, 10% for validation, and 10% for test.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.GcsDestination.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::GcsDestination struct">GcsDestination</a></td><td class="docblock-short"><p>The Google Cloud Storage location where the output is to be written to.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.GcsSource.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::GcsSource struct">GcsSource</a></td><td class="docblock-short"><p>The Google Cloud Storage location for the input content.</p>
@@ -289,7 +289,7 @@ allows for approximate nearest neighbor (a.k.a ANN) algorithms search.</p>
 DeployedIndexes.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.IndexPrivateEndpoints.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::IndexPrivateEndpoints struct">IndexPrivateEndpoints</a></td><td class="docblock-short"><p>IndexPrivateEndpoints proto is used to provide paths for users to send
 requests via private services access.</p>
-</td></tr><tr class="module-item"><td><a class="struct" href="struct.InputDataConfig.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::InputDataConfig struct">InputDataConfig</a></td><td class="docblock-short"><p>Specifies AI Platform owned input data to be used for training, and
+</td></tr><tr class="module-item"><td><a class="struct" href="struct.InputDataConfig.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::InputDataConfig struct">InputDataConfig</a></td><td class="docblock-short"><p>Specifies Vertex AI owned input data to be used for training, and
 possibly evaluating, the Model.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.Int64Array.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::Int64Array struct">Int64Array</a></td><td class="docblock-short"><p>A list of int64 values.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.IntegratedGradientsAttribution.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::IntegratedGradientsAttribution struct">IntegratedGradientsAttribution</a></td><td class="docblock-short"><p>An attribution method that computes the Aumann-Shapley value taking advantage
@@ -375,7 +375,7 @@ queried.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.MigratableResource.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::MigratableResource struct">MigratableResource</a></td><td class="docblock-short"><p>Represents one resource that exists in automl.googleapis.com,
 datalabeling.googleapis.com or ml.googleapis.com.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.MigrateResourceRequest.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::MigrateResourceRequest struct">MigrateResourceRequest</a></td><td class="docblock-short"><p>Config of migrating one resource from automl.googleapis.com,
-datalabeling.googleapis.com and ml.googleapis.com to AI Platform.</p>
+datalabeling.googleapis.com and ml.googleapis.com to Vertex AI.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.MigrateResourceResponse.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::MigrateResourceResponse struct">MigrateResourceResponse</a></td><td class="docblock-short"><p>Describes a successfully migrated resource.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.Model.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::Model struct">Model</a></td><td class="docblock-short"><p>A trained machine learning Model.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.ModelContainerSpec.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::ModelContainerSpec struct">ModelContainerSpec</a></td><td class="docblock-short"><p>Specification of a container for serving predictions. Some fields in this
@@ -484,8 +484,8 @@ will train a machine learning model on CMLE. The trained model will be used
 by data sampling algorithm to select DataItems.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.TrainingPipeline.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::TrainingPipeline struct">TrainingPipeline</a></td><td class="docblock-short"><p>The TrainingPipeline orchestrates tasks associated with training a Model. It
 always executes the training task, and optionally may also
-export data from AI Platform’s Dataset which becomes the training input,
-[upload][google.cloud.aiplatform.v1beta1.ModelService.UploadModel] the Model to AI Platform, and evaluate the
+export data from Vertex AI’s Dataset which becomes the training input,
+[upload][google.cloud.aiplatform.v1beta1.ModelService.UploadModel] the Model to Vertex AI, and evaluate the
 Model.</p>
 </td></tr><tr class="module-item"><td><a class="struct" href="struct.Trial.html" title="gapi_grpc::google::cloud::aiplatform::v1beta1::Trial struct">Trial</a></td><td class="docblock-short"><p>A message representing a Trial. A Trial contains a unique set of Parameters
 that has been or will be evaluated, along with the objective metrics got by
