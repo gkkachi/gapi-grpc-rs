@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["participant",""]],"struct":[["Participant","The participant of the transcript segment."],["WordInfo","Word-level info for words in a transcript."]]});

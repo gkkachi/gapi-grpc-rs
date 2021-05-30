@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["transcript_segment",""]],"struct":[["TranscriptSegment","A segment of a full transcript."]]});
